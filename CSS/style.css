@@ -452,8 +452,7 @@ p {
     line-height: 80px;
     padding-top: 60px;
     margin-left: 20px;
-    stroke-miterlimit: 2px;
-    stroke-color: white;
+    text-shadow: 2px 2px #ffffff;
   }
 
   button {
