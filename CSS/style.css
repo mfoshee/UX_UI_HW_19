@@ -1,3 +1,5 @@
+/* footer */
+
 .footerGrid {
     display:grid;
     grid-template-columns: 5% 5% 29% 14% 11% 8% 9% 5% 5% 5%;
@@ -12,8 +14,6 @@
     /* background-size: 100%; */
     padding-top: 30px;
   }
-
-  
 
 .childName {
   grid-area: auto;
@@ -901,9 +901,13 @@ ul {
   display: left;
   font-size: 18px;
   line-height: 27px;
-  color: #797979;}
-/* https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci */
+  color: #797979;
 }
+/* https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci */
 
 
+.caseImages {
+  width: 100%;
+  height: auto;
+}
 
