@@ -341,6 +341,9 @@ p {
   display: none;
 }
 
+
+
+
  @media only screen and (max-width: 767px) {
  
   #navigation {
@@ -449,6 +452,8 @@ p {
     line-height: 80px;
     padding-top: 60px;
     margin-left: 20px;
+    stroke-miterlimit: 2px;
+    stroke-color: white;
   }
 
   button {
