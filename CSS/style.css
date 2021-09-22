@@ -538,9 +538,10 @@ h3 {
 }
 
 iframe {
-  align-content: space-around;
-  margin-left: 15px;
-  margin-top: 10px;
+  align-content: center;
+  size: auto;
+  /* margin-left: 15px;
+  margin-top: 10px; */
   margin-bottom: 25px;
 }
 
