@@ -1,18 +1,19 @@
 .footerGrid {
     display:grid;
     grid-template-columns: 5% 5% 29% 14% 11% 8% 9% 5% 5% 5%;
-    text-align: center;
+    /* text-align: center; */
     background-color: white;
-    width: 100%;   
+    /* width: 100%;    */
     margin-top: 100px; 
-    background-image: url("../images/gradient.png");
-    background-repeat: no-repeat;
-    background-position-y: 0;
-    background-position: left top;
-    background-size: 100%;
+    /* background-image: url("../images/gradient.png");
+    background-repeat: repeat-x; */
+    /* background-position-y: 0; */
+    /* background-position: left top; */
+    /* background-size: 100%; */
     padding-top: 30px;
   }
 
+  
 
 .childName {
   grid-area: auto;
@@ -55,17 +56,17 @@ text-decoration: inherit;
   font-family: open-sans, sans-serif;
   font-weight: 800;
   font-style: normal;
-  font-size: 18px;
+  font-size: 16px;
   cursor: pointer;
+  text-transform: uppercase;
 }
 
 .link:hover {
   color: #59ABD0;
   text-decoration: underline;
   font-family: open-sans, sans-serif;
-  font-weight: 800;
-  font-style: bold;
-  font-size: 18px;
+  font-weight: 900;
+  font-size: 16px;
 }
 
 button {
@@ -120,16 +121,6 @@ body {
   /* display: flex; */
 }
 
-.case1, .case3 {
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
-.case2 {
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
 
 .hello {
   color: #DE007A;
@@ -152,16 +143,6 @@ h1 {
   margin: 0;
 }
 
-h3 {
-  color: #DE007A;
-  font-size: 30px;
-  font-family: open-sans-condensed, sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  white-space: nowrap;
-  line-height: 1px;
-  text-transform: uppercase;
-}
 
 h2{
   /* grid-area: auto; */
@@ -175,6 +156,33 @@ h2{
   margin-bottom: 15px;
 }
 
+h3 {
+  color: white;
+  font-size: 24px;
+  font-family: open-sans-condensed, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  white-space: normal;
+  line-height: 30px;
+  text-transform: uppercase;
+  padding: 20px;
+  text-align: center;
+  background-color: #DE007A;
+  border-radius: 20px 20px 0 0;
+  margin-top: 0;
+}
+
+h4 {
+  color: #DE007A;
+  font-size: 32px;
+  font-family: open-sans-condensed, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 40px;
+  text-transform: uppercase;
+  text-align: left;
+}
+
 h5{
   grid-area: auto;
   font-family: gala, sans-serif;
@@ -186,7 +194,7 @@ h5{
   margin-top: 42px;
 }
 
-h7 {
+.findings {
   color: #5A5A5A;
   font-size: 18px;
   font-family: open-sans, sans-serif;
@@ -215,10 +223,10 @@ h8 {
   width: 400px;
   height: 5px;
 }
-
+/* 
 .separator {
   width: 400px;
-}
+} */
 
 .myPhoto {
   align-content: 186px;
@@ -229,35 +237,92 @@ h8 {
   width: 359px;
 }
 
-/* .tfcPhoto {
-  align-content: 122px;
-  align-self: flex-start;
-  z-index: -1;
-  float: left;
-  margin: 8px;
-  padding-right: 40px;
-  width: 310px;
-  z-index: 0;
-} */
-
-iframe {
-  align-content: 122px;
-  align-self: flex-start;
-  z-index: -1;
-  float: left;
-  margin-right: 40px;
-  /* padding-right: 40px; */
-  width: 310px;
-  z-index: 0;
+.flex-container {
+  display: flex;
+  background-color: white;
+  width: auto;
+  justify-content: center;
+  align-items: center;
+}
+.flex-container > div {
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
 }
 
-.edPhoto {
-  
-  align-self: flex-start;
-  z-index: -1;
-  float: right;
-  margin: 8px;
+
+
+/* flip card */
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  perspective: 1000px;
+  border-radius: 20px;
+  height: 700px;
+  width: 335px;
 }
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 335px;
+  height: 700px;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 20px;
+  background-color: #F9E5EA;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  border-radius: 20px;
+  background-color: #F9E5EA;
+}
+
+/* Style the back side */
+.flip-card-back {
+  border-radius: 20px;
+  background-color: #F9E5EA;
+  transform: rotateY(180deg);
+}
+
+.flipImg {
+  width: 300px;
+  height: auto;
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.2);
+}
+
+.flipImg2 {
+  width: 280px;
+  height: auto;
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.2);
+}
+
+.flipImg3 {
+  width: 270px;
+  height: auto;
+}
+
+/* flip card end */
+
+
+
 
 p {
   font-family: open-sans, sans-serif;
@@ -267,6 +332,14 @@ p {
   font-size: 18px;
   line-height: 27px;
   color: #797979;
+}
+ 
+.studies p {
+  margin-right: 15px;
+  color: #5A5A5A;
+  text-align: left;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 #bodySpan {
@@ -324,6 +397,11 @@ p {
         border: none;
       }
 
+      .footLine {
+        margin-top: 100px;
+        margin-bottom: -100px;
+      }
+      
 
  .navigation:hover {
    color: #DE007A;
@@ -342,9 +420,199 @@ p {
 }
 
 
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+  #navigation {
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    background-color: white;
+    background-image: url("../images/gradient.png"), url("../images/puzzle_piece.png");
+    background-repeat: no-repeat;
+    background-position-y: 0;
+    background-size: cover;
+  }
+  
+  .headerGrid {
+    display:inline;
+    width: 100%;   
+    background-size: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 0;
+    margin-left: 30px;
+  }
+
+  .navigation {
+      display: none;
+  }
+  
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #DE007A;
+}
+
+  .hamburger {
+    display: inline;
+    cursor: pointer;
+  }
+
+  .logo {
+    margin-left: 30px;
+    width: 80%;
+    height: auto;
+  }
 
 
- @media only screen and (max-width: 767px) {
+/* hero */
+.content {
+  margin-top: 160px;
+  width: 100%;
+  align-content: center;
+  overflow-wrap: normal;
+}
+
+.content2 {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: auto;
+    height: auto;
+    align-content: center;
+    overflow-wrap: normal;
+  }
+  .content3 {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: auto;
+    align-content: center;
+    overflow-wrap: normal;
+  }
+
+  .content4 {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: auto;
+    align-content: center;
+    overflow-wrap: normal;
+  }
+
+
+  p {
+    text-align: justify;
+    margin-left: 30px;
+    margin-right: 40px;
+  }
+
+  
+  h1 {
+    color: #DE007A;
+    font-size: 42px;
+    font-family: gala, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    white-space: nowrap;
+    line-height: 80px;
+    padding-top: 60px;
+    margin-left: 20px;
+    text-shadow: 1px 1px rgba(255, 255, 255, .8);
+  }
+
+  button {
+    display: none;
+  }
+
+    #lineGrad {
+      min-height: 2px;
+      width: auto;
+      z-index: 1;
+      border: none;
+      margin-left: 20px;
+    }
+
+    #lineGrad2 {
+      margin-bottom: 50px;
+    }
+
+  body {
+    background-image: none;
+  }
+
+  .myPhoto {
+    align-self: flex-start;
+    z-index: -1;
+    float: right;
+    width: 38%;
+    position: relative;
+    padding-right: 15px;
+    padding-left: 8px;
+  }
+
+
+ /* case studies */
+ 
+ h2{
+  font-size: 36px;
+  margin-top: 25px;
+  text-align: center;
+}
+
+.flex-container {
+  display: flex;
+  background-color: white;
+  width: auto;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.flex-container > div {
+  margin: 10px;
+  padding: 10px;
+  font-size: 30px;
+}
+
+
+/* footer */
+  .footerGrid {
+    display:inline;
+    background-image: url("../images/gradient.png");
+    background-repeat: no-repeat;
+    background-position-y: 0;
+  }
+
+  .childLogo {
+    display: inline;
+    padding: 0;
+  }
+  
+  .childName {
+    display: inline;
+    text-align: center;
+    padding: 0;
+  }
+
+  .footerGrid .navigation {
+    display: list-item;
+    line-height: 20px;
+    padding-top: 10px;
+    text-align: center;
+
+  }
+
+  .footerGrid .social {
+    padding-top: 10px;
+  }
+
+
+  }
+
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
  
   #navigation {
     display: center;
@@ -452,7 +720,7 @@ p {
     line-height: 80px;
     padding-top: 60px;
     margin-left: 20px;
-    text-shadow: 2px 2px rgba(255, 255, 255, .8);
+    text-shadow: 1px 1px rgba(255, 255, 255, .8);
   }
 
   button {
@@ -512,22 +780,6 @@ p {
   display: none;
 }
 
-h3 {
-  color: white;
-  font-size: 24px;
-  font-family: open-sans-condensed, sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  white-space: normal;
-  line-height: 30px;
-  text-transform: uppercase;
-  padding: 10px 0px 10px 0px;
-  text-align: center;
-  /* display: inline-block; */
-  background-color: #DE007A;
-  border-radius: 20px 20px 0 0;
-}
-
 .case1, .case2, .case3 {
   background-color: #F9E5EA;
   border-radius: 20px 20px 20px 20px;
@@ -537,13 +789,6 @@ h3 {
   /* align-content: space-around; */
 }
 
-iframe {
-  align-content: center;
-  size: auto;
-  /* margin-left: 15px;
-  margin-top: 10px; */
-  margin-bottom: 25px;
-}
 
 .link {
   margin-right: 35px;
@@ -585,7 +830,7 @@ iframe {
 
   }
  
-/* end media */
+/* end tablet media */
 
 
 
@@ -621,21 +866,30 @@ h6 {
     "sidebar studyContent"
   }
 
+iframe {
+  float: none;
+  width: 210px; 
+  height: 510px;
+  border-radius: 20px;
+  border: 2px solid #DE007A;
+}
+
 .sidebar {
   grid-area: auto;
-  width: 182px;
+  width: 210px;
   position: sticky;
-  margin-left: 30px;
+  /* margin-left: 20px; */
   margin-top: 15px;
   padding: 10px;
+  margin-right: 50px;
 
 }
 
 .studyContent {
   grid-area: auto;
-  width: 780px;
+  width: 80%;
   text-align: left;
-  padding: 10px;
+  padding: 30px;
 }
 
 ul {
