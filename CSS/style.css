@@ -71,23 +71,25 @@ text-decoration: inherit;
 
 button {
   color: #DE007A;
-  text-decoration: underline;
+  /* text-decoration: underline; */
   font-family: open-sans, sans-serif;
   font-weight: 800;
   font-style: normal;
   font-size: 18px;
+  text-transform: uppercase;
   cursor: pointer;
   border: none;
   background-color: white;
 }
 
 button:hover {
-  color: #59ABD0;
-  text-decoration: underline;
+  /* color: #59ABD0; */
+  /* text-decoration: underline; */
   font-family: open-sans, sans-serif;
   font-weight: 800;
   font-style: bold;
   font-size: 18px;
+  transform: scale(105%);
 }
 
 .headerGrid {
@@ -958,3 +960,23 @@ ul {
 .arrow {
   color: #DE007A;
 }
+
+button, .cardBack {
+  padding: 15px;
+  border-radius: 20px;
+    margin-top: 30px;
+  background-color: #DE007A;
+  color: white;
+
+}
+
+.butText {
+  color: white;
+  font-family: open-sans, sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 16px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
