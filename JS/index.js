@@ -5,3 +5,10 @@ $(document).ready(function(){
     });
   });
 
+$(document).ready(function(){
+  $("#navCase").hover(function(){
+    $("#panel").slideDown("slow");
+  });
+});
+
+

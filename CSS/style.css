@@ -37,6 +37,24 @@
   text-align: center;
 }
 
+#panel {
+  font-family: open-sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  color: #000000;
+  opacity: 57%;
+  padding-top: 65px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #FBEEF1;
+  text-align: center;
+  border-radius: 20px;
+  padding: 5px;
+
+}
+
+
 .social {
   padding-top: 55px;
 }
@@ -94,7 +112,7 @@ button:hover {
 
 .headerGrid {
   display:grid;
-  grid-template-columns: 5% 48% 12% 13% 10% 10%;
+  grid-template-columns: 5% 44% 16% 13% 10% 10%;
   text-align: left;
   width: 100%;   
   background-size: 100%;
@@ -252,7 +270,13 @@ h8 {
   font-size: 30px;
 }
 
+.flex-container2 {
+  display: flex;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
 
+}
 
 /* flip card */
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
@@ -270,7 +294,7 @@ h8 {
   width: 335px;
   height: 700px;
   text-align: center;
-  transition: transform 0.6s;
+  transition: transform 1.2s;
   transform-style: preserve-3d;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   border-radius: 20px;
@@ -411,6 +435,8 @@ p {
    cursor: pointer;
  }
 
+
+
  .social:hover {
    transform: scale(1.1, 1.1);
    cursor: pointer;
@@ -462,6 +488,7 @@ p {
   .hamburger {
     display: inline;
     cursor: pointer;
+
   }
 
   .logo {
@@ -884,6 +911,15 @@ iframe {
   background-color: #797979;
 }
 
+.tripSide {
+  float: none;
+  width: 210px; 
+  height: 310px;
+  border-radius: 20px;
+  border: 2px solid #DE007A;
+  background-color: #797979;
+}
+
 .largeProtoDesk {
   float: none;
   width: 600px; 
@@ -954,6 +990,12 @@ ul {
 
 .caseImages {
   width: 100%;
+  height: auto;
+}
+
+.caseImages2 {
+  width: 80%;
+  padding-right: 50px;
   height: auto;
 }
 
