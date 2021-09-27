@@ -7,6 +7,7 @@
     background-image: url("../images/gradient.png");
     background-repeat: repeat-x;
     padding-top: 30px;
+    text-align: center;
   }
 
 .childName {
@@ -45,9 +46,11 @@
   text-align: left;
   border-radius: 20px;
   padding: 5px;
-
 }
 
+.mobileDetails {
+  display: none;
+}
 
 .social {
   padding-top: 55px;
@@ -83,7 +86,6 @@ text-decoration: inherit;
 
 button {
   color: #DE007A;
-  /* text-decoration: underline; */
   font-family: open-sans, sans-serif;
   font-weight: 800;
   font-style: normal;
@@ -95,12 +97,6 @@ button {
 }
 
 button:hover {
-  /* color: #59ABD0; */
-  /* text-decoration: underline; */
-  font-family: open-sans, sans-serif;
-  font-weight: 800;
-  font-style: bold;
-  font-size: 18px;
   transform: scale(105%);
 }
 
@@ -123,9 +119,9 @@ body {
   position: relative;
 }
 
-.heroImg, .case2 {
-  padding-top: 30px;
-  padding-bottom: 30px; 
+.heroImg {
+  padding-top: 90px;
+  padding-bottom: 40px; 
   display: right;
 }
 
@@ -257,6 +253,7 @@ h5{
   width: auto;
   justify-content: center;
   align-items: center;
+  margin-bottom: 150px;
 }
 .flex-container > div {
   margin: 10px;
@@ -451,6 +448,254 @@ p {
 
 
 
+/* ****************************************************************** */
+/* Case Studies */
+.tfcPhoto2 {
+  height: 150px;
+  width: 155px;
+  margin-top: 65px;
+}
+
+h6 {
+  color: #DE007A;
+  font-size: 24px;
+  font-family: open-sans-condensed, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  white-space: normal;
+  line-height: 30px;
+  text-transform: uppercase;
+  padding-right: 10%;
+  z-index: 1;
+  vertical-align: bottom;
+  overflow-wrap: normal;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+.containerGrid2 {
+  display: grid;
+  height: span;
+  padding: 30px;
+  grid-template-areas:
+    "sidebar studyContent"
+  }
+
+iframe {
+  float: none;
+  width: 210px; 
+  height: 510px;
+  border-radius: 20px;
+  border: 2px solid #DE007A;
+}
+
+.edSide {
+  float: none;
+  width: 210px; 
+  height: 190px;
+  border-radius: 20px;
+  border: 2px solid #DE007A;
+  background-color: #797979;
+}
+
+.tripSide {
+  float: none;
+  width: 210px; 
+  height: 310px;
+  border-radius: 20px;
+  border: 2px solid #DE007A;
+  background-color: #797979;
+}
+
+.largeProtoDesk {
+  float: none;
+  width: 600px; 
+  height: 400px;
+  margin-right: 50px;
+}
+
+.largeProtoDeskEd {
+  float: none;
+  width: 480px; 
+  height: 400px;
+  margin-right: 30px;
+}
+
+.largeProtoTabED {
+  float: none;
+  width: 280px; 
+  height: 400px;
+  margin-right: 30px;
+}
+
+.largeProtoMob {
+  float: none;
+  width: 250px; 
+  height: 400px;
+}
+.largeProtoMobEd {
+  float: none;
+  width: 180px; 
+  height: 400px;
+}
+
+.margin {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.sidebar {
+  grid-area: auto;
+  width: 210px;
+  position: sticky;
+  /* margin-left: 20px; */
+  margin-top: 15px;
+  padding: 10px;
+  margin-right: 50px;
+}
+
+.studyContent {
+  grid-area: auto;
+  width: 80%;
+  text-align: left;
+  padding: 30px;
+}
+
+ul {
+  color: #797979;
+  font-size: 18px;
+  font-family: open-sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  display: left;
+  font-size: 18px;
+  line-height: 27px;
+  color: #797979;
+}
+/* https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci */
+
+
+.caseImages {
+  width: 100%;
+  height: auto;
+}
+
+.caseImages2 {
+  width: 80%;
+  padding-right: 50px;
+  height: auto;
+}
+
+.arrow {
+  color: #DE007A;
+}
+
+button.cardBack {
+  padding: 15px;
+  border-radius: 20px;
+    margin-top: 30px;
+  background-color: #DE007A;
+  color: white;
+
+}
+
+.butText {
+  color: white;
+  font-family: open-sans, sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 16px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+/* ****************************************************************** */
+
+
+
+/* ****************************************************************** */
+/* expand text in hero */
+#panel, #flip {
+  /* padding: 5px; */
+  text-align: left;
+  
+}
+
+#panel {
+  padding: 0px;
+  display: none;
+}
+button.more {
+  color: #DE007A;
+  background-color: white;
+  margin-top: 0px;
+  padding: 0;
+}
+/* ****************************************************************** */
+
+
+
+/* ****************************************************************** */
+/* navigation dropdown */
+.dropbtn {
+  border: none;
+  cursor: pointer;
+  color: #797979;
+  background-color: white;
+  margin-top: 0px;
+  padding: 0;
+  font-family: open-sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  text-align: center;
+  padding-top: 65px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #FBEEF1;
+  color: #5A5A5A;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  font-family: open-sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-top: 10px;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.dropdown-content a {
+  color: 5A5A5A;
+  padding: 16px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #C8E6ED;
+  transform: scale(100%);
+}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {
+  color: #DE007A;
+font-family: open-sans, sans-serif;
+font-size: 16px;
+font-weight: 600;
+opacity: 100%;
+cursor: pointer;
+transform: scale(100%);
+}
+
+
 
 
 /* ****************************************************************** */
@@ -470,10 +715,11 @@ p {
   }
   
   .headerGrid {
-    display:inline;
+    display:flex;
     width: 100%;   
     background-size: 100%;
     padding-top: 20px;
+    margin-right: 20px;
     padding-bottom: 20px;
     margin-top: 0;
     margin-left: 30px;
@@ -483,6 +729,15 @@ p {
       display: none;
   }
   
+
+.mobileDetails {
+  display: inline-block;
+}
+
+h3 {
+  display: none;
+}
+
   .bar {
     display: block;
     width: 25px;
@@ -496,10 +751,11 @@ p {
   .hamburger {
     display: inline;
     cursor: pointer;
+    margin-right: 15%;
   }
 
   .logo {
-    margin-left: 30px;
+    /* margin-left: 30px; */
     width: 80%;
     height: auto;
   }
@@ -507,7 +763,7 @@ p {
 
 /* hero */
 .content {
-  margin-top: 160px;
+  margin-top: 70px;
   width: 100%;
   align-content: center;
   overflow-wrap: normal;
@@ -558,7 +814,7 @@ p {
     text-shadow: 1px 1px rgba(255, 255, 255, .8);
   }
 
-  .dropbtn .dropdown {
+  .dropdown  {
     display: none;
   }
 
@@ -943,252 +1199,3 @@ p {
 /* end tablet media */
 /* ****************************************************************** */
 
-
-
-/* ****************************************************************** */
-/* Case Studies */
-.tfcPhoto2 {
-  height: 150px;
-  width: 155px;
-  margin-top: 65px;
-}
-
-h6 {
-  color: #DE007A;
-  font-size: 24px;
-  font-family: open-sans-condensed, sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  white-space: normal;
-  line-height: 30px;
-  text-transform: uppercase;
-  padding-right: 10%;
-  z-index: 1;
-  vertical-align: bottom;
-  overflow-wrap: normal;
-  margin-top: 25px;
-  margin-bottom: 20px;
-}
-.containerGrid2 {
-  display: grid;
-  height: span;
-  padding: 30px;
-  grid-template-areas:
-    "sidebar studyContent"
-  }
-
-iframe {
-  float: none;
-  width: 210px; 
-  height: 510px;
-  border-radius: 20px;
-  border: 2px solid #DE007A;
-}
-
-.edSide {
-  float: none;
-  width: 210px; 
-  height: 190px;
-  border-radius: 20px;
-  border: 2px solid #DE007A;
-  background-color: #797979;
-}
-
-.tripSide {
-  float: none;
-  width: 210px; 
-  height: 310px;
-  border-radius: 20px;
-  border: 2px solid #DE007A;
-  background-color: #797979;
-}
-
-.largeProtoDesk {
-  float: none;
-  width: 600px; 
-  height: 400px;
-  margin-right: 50px;
-}
-
-.largeProtoDeskEd {
-  float: none;
-  width: 480px; 
-  height: 400px;
-  margin-right: 30px;
-  padding-bottom: ;
-}
-
-.largeProtoTabED {
-  float: none;
-  width: 280px; 
-  height: 400px;
-  margin-right: 30px;
-}
-
-.largeProtoMob {
-  float: none;
-  width: 250px; 
-  height: 400px;
-}
-.largeProtoMobEd {
-  float: none;
-  width: 180px; 
-  height: 400px;
-}
-
-.margin {
-  margin-right: 10px;
-  margin-left: 10px;
-}
-.sidebar {
-  grid-area: auto;
-  width: 210px;
-  position: sticky;
-  /* margin-left: 20px; */
-  margin-top: 15px;
-  padding: 10px;
-  margin-right: 50px;
-}
-
-.studyContent {
-  grid-area: auto;
-  width: 80%;
-  text-align: left;
-  padding: 30px;
-}
-
-ul {
-  color: #797979;
-  font-size: 18px;
-  font-family: open-sans, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  display: left;
-  font-size: 18px;
-  line-height: 27px;
-  color: #797979;
-}
-/* https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci */
-
-
-.caseImages {
-  width: 100%;
-  height: auto;
-}
-
-.caseImages2 {
-  width: 80%;
-  padding-right: 50px;
-  height: auto;
-}
-
-.arrow {
-  color: #DE007A;
-}
-
-button, .cardBack {
-  padding: 15px;
-  border-radius: 20px;
-    margin-top: 30px;
-  background-color: #DE007A;
-  color: white;
-
-}
-
-.butText {
-  color: white;
-  font-family: open-sans, sans-serif;
-  font-weight: 800;
-  font-style: normal;
-  font-size: 16px;
-  cursor: pointer;
-  text-transform: uppercase;
-}
-/* ****************************************************************** */
-
-
-
-/* ****************************************************************** */
-/* expand text in hero */
-#panel, #flip {
-  /* padding: 5px; */
-  text-align: left;
-  
-}
-
-#panel {
-  padding: 0px;
-  display: none;
-}
-button, .more {
-  color: #DE007A;
-  background-color: white;
-  margin-top: 0px;
-  padding: 0;
-}
-/* ****************************************************************** */
-
-
-
-/* ****************************************************************** */
-/* navigation dropdown */
-.dropbtn {
-  border: none;
-  cursor: pointer;
-  color: #797979;
-  background-color: white;
-  margin-top: 0px;
-  padding: 0;
-  font-family: open-sans, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 16px;
-  text-align: center;
-  padding-top: 65px;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #FBEEF1;
-  color: #5A5A5A;
-  overflow: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  font-family: open-sans, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 14px;
-  text-transform: uppercase;
-  margin-top: 10px;
-  border-radius: 0px 0px 20px 20px;
-}
-
-.dropdown-content a {
-  color: 5A5A5A;
-  padding: 16px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {
-  background-color: #C8E6ED;
-  transform: scale(100%);
-}
-
-.dropdown:hover .dropdown-content {display: block;}
-
-.dropdown:hover .dropbtn {
-  color: #DE007A;
-font-family: open-sans, sans-serif;
-font-size: 16px;
-font-weight: 600;
-opacity: 100%;
-cursor: pointer;
-transform: scale(100%);
-}
