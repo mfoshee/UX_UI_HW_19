@@ -42,13 +42,13 @@
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
-  color: #000000;
-  opacity: 57%;
+  color: #797979;
+  /* opacity: 57%; */
   padding-top: 65px;
   text-align: center;
-  text-transform: uppercase;
-  background-color: #FBEEF1;
-  text-align: center;
+  /* text-transform: uppercase; */
+  /* background-color: #FBEEF1; */
+  text-align: left;
   border-radius: 20px;
   padding: 5px;
 
@@ -1025,6 +1025,7 @@ button, .cardBack {
 #panel, #flip {
   /* padding: 5px; */
   text-align: left;
+  
 }
 
 #panel {
@@ -1037,3 +1038,74 @@ button, .more {
   margin-top: 0px;
   padding: 0;
 }
+
+
+
+
+.dropbtn {
+  /* background-color: #3498DB; */
+  /* color: white; */
+  /* padding: 16px; */
+  /* font-size: 16px; */
+  border: none;
+  cursor: pointer;
+  color: #797979;
+  background-color: white;
+  margin-top: 0px;
+  padding: 0;
+  font-family: open-sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  text-align: center;
+  padding-top: 65px;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+color: #DE007A;
+font-family: open-sans, sans-serif;
+/* font-weight: 800; */
+/* font-style: bold; */
+font-size: 16px;
+font-weight: 600;
+opacity: 100%;
+cursor: pointer;
+transform: scale(100%);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #FBEEF1;
+  color: #5A5A5A;
+  /* min-width: auto; */
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  font-family: open-sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-top: 10px;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.dropdown-content a {
+  color: 5A5A5A;
+  padding: 16px 16px;
+  text-decoration: none;
+  display: block;
+  
+}
+
+.dropdown a:hover {
+  background-color: #C8E6ED;
+}
+
+.show {display: block;}
