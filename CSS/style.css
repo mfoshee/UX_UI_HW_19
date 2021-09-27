@@ -4,11 +4,11 @@
     display:grid;
     grid-template-columns: 5% 5% 29% 14% 11% 8% 9% 5% 5% 5%;
     /* text-align: center; */
-    background-color: #FBEEF1;
+    /* background-color: #FBEEF1; */
     /* width: 100%;    */
     margin-top: 100px; 
-    /* background-image: url("../images/gradient.png");
-    background-repeat: repeat-x; */
+    background-image: url("../images/gradient.png");
+    background-repeat: repeat-x;
     /* background-position-y: 0; */
     /* background-position: left top; */
     /* background-size: 100%; */
@@ -446,7 +446,8 @@ p {
   display: none;
 }
 
-
+/* ****************************************************************** */
+/* mobile media query - normal */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 
   #navigation {
@@ -638,8 +639,13 @@ p {
 
 
   }
+/* ****************************************************************** */
 
 
+
+
+/* ****************************************************************** */
+/* tablet media query */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
  
   #navigation {
@@ -859,11 +865,12 @@ p {
   }
  
 /* end tablet media */
+/* ****************************************************************** */
 
 
 
-
-/* Case Study - The Frederick Center */
+/* ****************************************************************** */
+/* Case Studies */
 .tfcPhoto2 {
   height: 150px;
   width: 155px;
@@ -1021,7 +1028,12 @@ button, .cardBack {
   cursor: pointer;
   text-transform: uppercase;
 }
+/* ****************************************************************** */
 
+
+
+/* ****************************************************************** */
+/* expand text in hero */
 #panel, #flip {
   /* padding: 5px; */
   text-align: left;
@@ -1038,15 +1050,13 @@ button, .more {
   margin-top: 0px;
   padding: 0;
 }
+/* ****************************************************************** */
 
 
 
-
+/* ****************************************************************** */
+/* navigation dropdown */
 .dropbtn {
-  /* background-color: #3498DB; */
-  /* color: white; */
-  /* padding: 16px; */
-  /* font-size: 16px; */
   border: none;
   cursor: pointer;
   color: #797979;
@@ -1061,18 +1071,6 @@ button, .more {
   padding-top: 65px;
 }
 
-.dropbtn:hover, .dropbtn:focus {
-color: #DE007A;
-font-family: open-sans, sans-serif;
-/* font-weight: 800; */
-/* font-style: bold; */
-font-size: 16px;
-font-weight: 600;
-opacity: 100%;
-cursor: pointer;
-transform: scale(100%);
-}
-
 .dropdown {
   position: relative;
   display: inline-block;
@@ -1083,7 +1081,6 @@ transform: scale(100%);
   position: absolute;
   background-color: #FBEEF1;
   color: #5A5A5A;
-  /* min-width: auto; */
   overflow: auto;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -1101,11 +1098,21 @@ transform: scale(100%);
   padding: 16px 16px;
   text-decoration: none;
   display: block;
-  
 }
 
-.dropdown a:hover {
+.dropdown-content a:hover {
   background-color: #C8E6ED;
+  transform: scale(100%);
 }
 
-.show {display: block;}
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {
+  color: #DE007A;
+font-family: open-sans, sans-serif;
+font-size: 16px;
+font-weight: 600;
+opacity: 100%;
+cursor: pointer;
+transform: scale(100%);
+}
