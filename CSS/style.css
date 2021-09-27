@@ -3,15 +3,9 @@
 .footerGrid {
     display:grid;
     grid-template-columns: 5% 5% 29% 14% 11% 8% 9% 5% 5% 5%;
-    /* text-align: center; */
-    /* background-color: #FBEEF1; */
-    /* width: 100%;    */
     margin-top: 100px; 
     background-image: url("../images/gradient.png");
     background-repeat: repeat-x;
-    /* background-position-y: 0; */
-    /* background-position: left top; */
-    /* background-size: 100%; */
     padding-top: 30px;
   }
 
@@ -227,7 +221,7 @@ h5{
   line-height: 22px;
 }
 
-h8 {
+/* h8 {
   color: #DE007A;
   font-size: 20px;
   font-family: open-sans, sans-serif;
@@ -236,7 +230,7 @@ h8 {
   white-space: nowrap;
   line-height: 1px;
   text-transform: uppercase;
-}
+} */
 
 .centerCase {
   display: block;
@@ -424,6 +418,7 @@ p {
         text-align: left;
         width: 100%;
         border: none;
+        margin-top: -30px;
       }
 
       .footLine {
@@ -563,7 +558,7 @@ p {
     text-shadow: 1px 1px rgba(255, 255, 255, .8);
   }
 
-  button {
+  .dropbtn .dropdown {
     display: none;
   }
 
@@ -635,18 +630,27 @@ p {
     text-align: center;
     padding: 0;
   }
-
+  
   .footerGrid .navigation {
-    display: list-item;
+    display: flex;
     line-height: 20px;
-    padding-top: 10px;
+    padding-top: 8px;
     text-align: center;
-
+    padding-bottom: 12px;
   }
 
   .footerGrid .social {
-    padding-top: 10px;
+    padding-top: 40px;
+    display: inline;
+    padding-right: 30px;
   }
+
+  .footLine {
+    margin-top: 100px;
+    margin-bottom: 0px;
+  }
+
+
 /* The flip card container */
 .flip-card {
   background-color: transparent;
@@ -662,14 +666,14 @@ p {
   width: 335px;
   height: 700px;
   text-align: center;
-  transition: transform 1.2s;
+  transition: transform 1.5s;
   transform-style: preserve-3d;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   border-radius: 20px;
 }
 
 /* horizontal flip  */
-.flip-card:hover .flip-card-inner {
+.flip-card:click .flip-card-inner {
   transform: rotateY(180deg);
 }
 
@@ -692,17 +696,6 @@ p {
   background-color: #F9E5EA;
   transform: rotateY(180deg);
 }
-
-.moreInfo {
-  display: inline;
-  cursor: pointer;
-  color: white;
-  /* background-color: #DE007A; */
-  margin-top: 0px;
-  padding: 0;
-}
-
-
 
 .flipImg {
   width: 300px;
@@ -887,9 +880,6 @@ p {
 
 .studies p {
   color: #5A5A5A;
-}
-.studies p .moreInfo {
-  color: white;
 }
 
 /* .case1, .case2, .case3,  p {
