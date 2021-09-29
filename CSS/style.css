@@ -757,7 +757,7 @@ button.more {
   }
 
   .hamburger {
-    /* display: flex; */
+    display: flex;
     display: inline;
     margin-right: 15%;
   }
