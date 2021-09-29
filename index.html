@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/style.css">  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/style.css"> 
+    <script src="https://use.fontawesome.com/b283045d88.js"></script> 
     <title>Michele Foshee Portfolio</title>
     <link rel="stylesheet" href="https://use.typekit.net/wmf3fza.css">
 </head>
@@ -13,36 +15,42 @@
 <!-- navigation -->
 
 <body>
-    <section id="navigation">
-        <header class="headerGrid">
-            <div><br></div>
-        <div class="logo">
-                <picture>
-                <source srcset="images/logo-small.png" media="(max-width: 767px)">
-                <source srcset="images/logo.png">
-                <img src="images/logo.png" alt="Logo" width="auto">
-            </picture>
-        </div>
+<section id="navigation">
+    <header class="headerGrid">
+        <div><br></div>
+    <div class="logo">
+            <picture>
+            <source srcset="images/logo-small.png" media="(max-width: 767px)">
+            <source srcset="images/logo.png">
+            <img src="images/logo.png" alt="Logo" width="auto">
+        </picture>
+    </div>
+    
+    <div class="dropdown">
+        <button class="dropbtn navigation"><a href="#UX/UI_Case_Studies" class="text-decoration-none text-color-#DE007A">UX/UI CASE STUDIES</a> </button>
+    <div class="dropdown-content">
+          <a href="tfc.html">The Frederick Center</a>
+          <a href="tripapp.html">SafeTrip! Travel</a>
+          <a href="edgov.html">U.S. Dept. of Ed.</a>
+    </div>
+    </div>
+    <div class="navigation">RELATED WORK</div>
+    <div class="navigation"><a href="images/MFoshee_resume_UXUI_092021.pdf" target="blank">RESUME</a></div>
+    <div class="navigation"><a href="mailto:mfoshee@gmail.com" target="blank">CONTACT</a></div>
         
-        <div class="dropdown">
-            <button class="dropbtn"><a href="#UX/UI_Case_Studies">UX/UI CASE STUDIES</a> </button>
-        <div class="dropdown-content">
-              <a href="tfc.html">The Frederick Center</a>
-              <a href="tripapp.html">SafeTrip! Travel</a>
-              <a href="edgov.html">U.S. Dept. of Ed.</a>
+    <div class="hamburger">
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="#UX/UI_Case_Studies">UX/UI CASE STUDIES</a>
+          <a href="#">RELATED WORK</a>
+          <a href="images/MFoshee_resume_UXUI_092021.pdf" target="blank">RESUME</a>
+          <a href="mailto:mfoshee@gmail.com" target="blank">CONTACT</a>
         </div>
-        </div>
-        <div class="navigation">RELATED WORK</div>
-        <div class="navigation"><a href="../UX_UI_HW_18/images/MFoshee_resume_UXUI_092021.pdf" target="blank">RESUME</a></div>
-        <div class="navigation"><a href="mailto:mfoshee@gmail.com" target="blank">CONTACT</a></div>
-            
-        <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-        </div>
-        </header>
-        </section>
+      </div>
+        <span style="font-size:30px;cursor:pointer;color:#DE007A" onclick="openNav()">&#9776;</span>
+    </header>
+    </section>
 
 
 
@@ -67,8 +75,7 @@
                 <br><br>
                 A design challenge is like a good puzzle.</p>
             <div id="flip" class="open"><button>+ more</button></div>
-            <!-- <div id="flip2" class="open"><button>– less</button></div> -->
-            <!-- <div class="showpanel">+ more</div> -->
+            
            
 
             <div id="panel">
@@ -111,10 +118,10 @@
         </div>
         
         <div class="flip-card-back">
-            <h3><a href="tfc.html">The frederick center website redesign</a></h3>
+            <h3 class="cardHeadBack"><a href="tfc.html" style="color: white;">The frederick center website redesign</a></h3>
             <p>Frederick Center website provides a wealth of resources and programs for the LGBTQ+ community in the Frederick, MD area, but users struggle to find the information they need and to register for programs, make donations, or volunteer, making users leave the site before completing their desired transactions.</p> 
             <button class="cardBack" class="butText"><a href="tfc.html">
-                <div>+ process &amp; prototype</div>
+                <div style="color: white;">process &amp; prototype</div>
         </div></a></button>
         </div>
     </div>
@@ -125,15 +132,16 @@
           <div class="flip-card-front">
             <h3>SAFETRIP! 
                 <br>TRAVEL APPLICATION</h3>
+                <h3 class="mobileDetails">SAFETRIP! TRAVEL APPLICATION<br><span style="font-size:18px;font-weight:600;text-decoration:underline;">+ show details</span></h3>
+    
             <img class="flipImg3" src="images/safetrip_screen.png">
         </div>
         
         <div class="flip-card-back">
-            <h3>SAFETRIP! 
-                <br>TRAVEL APPLICATION</h3>
+            <h3 class="cardHeadBack">SAFETRIP! TRAVEL APPLICATION</h3>
             <p>The pandemic has had global impact, causing unprecedented restrictions in travel. Our goal is to create a product that meets our users’ travel needs and allays their anxieties and fears post-pandemic. We believe there will be an increase in desire to travel, but at the same time, new needs and wants will become a part of travellers’ requirements.</p> 
             <button class="cardBack" class="butText"><a href="tripapp.html">
-            <div>+ process &amp; prototype</div>
+            <div style="color: white;">process &amp; prototype</div>
         </div></a></button>
         </div>
     </div>
@@ -141,15 +149,17 @@
     <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
-            <h3><a href="edgov.html">U.S. Department of education website redesign</a></h3>
+            <h3>U.S. Department of education website redesign</a></h3>
+            <h3 class="mobileDetails">U.S. Department of education website redesign<br><span style="font-size:18px;font-weight:600;text-decoration:underline;">+ show details</span></h3>
+
             <img class="flipImg2" src="images/GOV_screen.png">
         </div>
         
         <div class="flip-card-back">
-            <h3>U.S. Department of education website redesign</h3>
+            <h3 class="cardHeadBack">U.S. Department of education website redesign</h3>
             <p>Government websites are loaded with information, data, resources, and links to other related websites. The information can often be overwhelming. How can we redesign this website to make the process of learning education policies, data, resources, loan/grant information, updates/news, and other important information easier for the user?</p> 
             <button class="cardBack" class="butText"><a href="edgov.html">
-            <div>+ process &amp; prototype</div>
+            <div  style="color: white;">process &amp; prototype</div>
         </div></a></button>
         </div>
     </div>

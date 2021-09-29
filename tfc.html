@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/style.css">  
-    <title>The Frederick Center Website Redesign Case Study</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/style.css"> 
+    <script src="https://use.fontawesome.com/b283045d88.js"></script>     <title>The Frederick Center Website Redesign Case Study</title>
     <link rel="stylesheet" href="https://use.typekit.net/wmf3fza.css">
 
     
@@ -16,32 +17,38 @@
     <section id="navigation">
         <header class="headerGrid">
             <div><br></div>
-            <div class="logo">
-                <a href="index.html"><picture>
+        <div class="logo">
+            <picture><a href="index.html">
                 <source srcset="images/logo-small.png" media="(max-width: 767px)">
                 <source srcset="images/logo.png">
                 <img src="images/logo.png" alt="Logo" width="auto">
-            </picture></a>
+            </a></picture>
         </div>
         
-          <div class="dropdown">
-            <button class="dropbtn"><a href="#UX/UI_Case_Studies">UX/UI CASE STUDIES</a> </button>
-            <div class="dropdown-content">
+        <div class="dropdown">
+            <button class="dropbtn navigation"><a href="#UX/UI_Case_Studies" class="text-decoration-none text-color-#DE007A">UX/UI CASE STUDIES</a> </button>
+        <div class="dropdown-content">
               <a href="tfc.html">The Frederick Center</a>
               <a href="tripapp.html">SafeTrip! Travel</a>
               <a href="edgov.html">U.S. Dept. of Ed.</a>
+        </div>
+        </div>
+        <div class="navigation">RELATED WORK</div>
+        <div class="navigation"><a href="images/MFoshee_resume_UXUI_092021.pdf" target="blank">RESUME</a></div>
+        <div class="navigation"><a href="mailto:mfoshee@gmail.com" target="blank">CONTACT</a></div>
+            
+        <div class="hamburger">
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+              <a href="#UX/UI_Case_Studies">UX/UI CASE STUDIES</a>
+              <a href="#">RELATED WORK</a>
+              <a href="images/MFoshee_resume_UXUI_092021.pdf" target="blank">RESUME</a>
+              <a href="mailto:mfoshee@gmail.com" target="blank">CONTACT</a>
             </div>
           </div>
-        <!-- <div class="navigation"><a href="#UX/UI_Case_Studies">UX/UI CASE STUDIES</a></div> -->
-                <div class="navigation">RELATED WORK</div>
-                <div class="navigation"><a href="../UX_UI_HW_18/images/MFoshee_resume_UXUI_092021.pdf" target="blank">RESUME</a></div>
-                <div class="navigation"><a href="mailto:mfoshee@gmail.com" target="blank">CONTACT</a></div>
-            </header>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+            <span style="font-size:30px;cursor:pointer;color:#DE007A" onclick="openNav()">&#9776;</span>
+        </header>
         </section>
 
 
@@ -193,27 +200,32 @@
 
 
 
-         <!-- Footer -->
-         <hr id="lineGrad3" class="footLine">
+       <!-- Footer -->
+    <hr id="lineGrad3" class="footLine">
 
-         <footer class="footerGrid">
-            <div><br></div>
-            <div><a href="index.html">
-                <img class="childLogo" src="images/logo.png" alt="Logo" width="69px">
-            </a>
-            </div>
-            <div>
-            <h5 class="childName">Michele Foshee</h5>
-            </div>
-                <div class="navigation"><a href="index.html#UX/UI_Case_Studies">UX/UI CASE STUDIES</a></div>
-                <div class="navigation">RELATED WORK</div>
-                <div class="navigation"><a href="images/MFoshee_resume_UXUI_092021.pdf" target="blank">RESUME</a></div>
-                <div class="navigation"><a href="mailto:mfoshee@gmail.com" target="blank">CONTACT</a></div>
-                <div class="social"><a href="https://www.linkedin.com/in/mlfstudio/" target="blank"><img src="images/linkedin.png" alt="LinkedIn" width="25px"></a></div>
-                <div class="social"><a href="https://www.instagram.com/mfoshee/" target="blank"><img src="images/insta.png" alt="Instagram" width="25px"></a></div>
-                <div class="social"><a href="https://www.facebook.com/mfoshee.art" target="blank"><img src="images/facebook.png" alt="Facebook" width="11px"></a></div>
-            </div>
-    
-        </footer>
+    <footer class="footerGrid">
+       <div><br></div>
+       <div><a href="index.html">
+           <img class="childLogo" src="images/logo.png" alt="Logo" width="69px">
+       </a>
+       </div>
+       <div>
+       <h5 class="childName">Michele Foshee</h5>
+       </div>
+           <div class="navigation"><a href="index.html#UX/UI_Case_Studies">UX/UI CASE STUDIES</a></div>
+           <div class="navigation">RELATED WORK</div>
+           <div class="navigation"><a href="images/MFoshee_resume_UXUI_092021.pdf" target="blank">RESUME</a></div>
+           <div class="navigation"><a href="mailto:mfoshee@gmail.com" target="blank">CONTACT</a></div>
+           <div class="social"><a href="https://www.linkedin.com/in/mlfstudio/" target="blank"><img src="images/linkedin.png" alt="LinkedIn" width="25px"></a></div>
+           <div class="social"><a href="https://www.instagram.com/mfoshee/" target="blank"><img src="images/insta.png" alt="Instagram" width="25px"></a></div>
+           <div class="social"><a href="https://www.facebook.com/mfoshee.art" target="blank"><img src="images/facebook.png" alt="Facebook" width="11px"></a></div>
+       </div>
+
+   </footer>
 </body>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+<script src="js/index.js"></script>
 </html>

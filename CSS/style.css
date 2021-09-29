@@ -1,36 +1,107 @@
-/* footer */
-
-.footerGrid {
-    display:grid;
-    grid-template-columns: 5% 5% 29% 14% 11% 8% 9% 5% 5% 5%;
-    margin-top: 100px; 
-    background-image: url("../images/gradient.png");
-    background-repeat: repeat-x;
-    padding-top: 30px;
-    text-align: center;
-  }
-
-.childName {
-  grid-area: auto;
-  text-align: left;
-  font-family: gala, sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 36px;
-  color: #DE007A;
-  padding-left: 30px;
-}
+/* header */
 
 .navigation {
   font-family: open-sans, sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
-  color: #000000;
-  opacity: 57%;
+  color: #797979;
   padding-top: 65px;
   text-align: center;
 }
+
+.headerGrid {
+  display:grid;
+  grid-template-columns: 5% 44% 16% 13% 10% 10%;
+  text-align: left;
+  width: 100%;   
+  background-size: 100%;
+  padding-top: 20px;
+}
+
+.dropbtn {
+  color: #DE007A;
+  font-family: open-sans, sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  background-color: white;
+}
+
+.dropdown  {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #FBEEF1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 0 0 20px 20px;
+  margin-top: 10px;
+}
+
+.dropdown-content a {
+  color: #5A5A5A;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-transform: uppercase;
+}
+
+.dropdown-content a:hover {
+  background-color: #DCF2FC;
+  color: #5A5A5A;
+  font-weight: 600;
+}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: none;}
+
+/* header end */
+/* ********************************************************** */
+
+
+
+
+/* ********************************************************** */
+/* footer */
+
+.footerGrid {
+  display:grid;
+  grid-template-columns: 5% 5% 29% 14% 11% 8% 9% 5% 5% 5%;
+  margin-top: 100px; 
+  background-image: url("../images/gradient.png");
+  background-repeat: repeat-x;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.childName {
+grid-area: auto;
+text-align: left;
+font-family: gala, sans-serif;
+font-weight: 500;
+font-style: normal;
+font-size: 36px;
+color: #DE007A;
+padding-left: 30px;
+}
+
+/* end footer */
+/* **********************************************************  */
+
+
+
+/* ********************************************************** */
+/* body */
 
 #panel {
   font-family: open-sans, sans-serif;
@@ -38,31 +109,24 @@
   font-style: normal;
   font-size: 16px;
   color: #797979;
-  /* opacity: 57%; */
   padding-top: 65px;
   text-align: center;
-  /* text-transform: uppercase; */
-  /* background-color: #FBEEF1; */
   text-align: left;
   border-radius: 20px;
   padding: 5px;
 }
 
-.mobileDetails {
-  display: none;
-}
+.mobileDetails {display: none;}
 
-.social {
-  padding-top: 55px;
-}
+.social {padding-top: 55px;}
 
-.logo {
-  opacity: 100%;
-}
+.logo {opacity: 100%;}
 
-a {
-color: inherit;
-text-decoration: inherit;
+a {color: #797979;}
+
+a:hover {
+  color: #DE007A;
+  text-decoration: none;
 }
 
 .link {
@@ -96,18 +160,7 @@ button {
   background-color: white;
 }
 
-button:hover {
-  transform: scale(105%);
-}
-
-.headerGrid {
-  display:grid;
-  grid-template-columns: 5% 44% 16% 13% 10% 10%;
-  text-align: left;
-  width: 100%;   
-  background-size: 100%;
-  padding-top: 20px;
-}
+button:hover {transform: scale(105%);}
 
 body {
   background-image: url("../images/puzzle_piece.png"), url("../images/gradient.png");
@@ -128,10 +181,9 @@ body {
 .content {
   width: 65%;
   margin: 0 auto;
-  /* display: flex; */
 }
+
 .cardSort {
-  /* width: 65%; */
   margin: 0 auto;
   display: flex;
 }
@@ -159,7 +211,6 @@ h1 {
 
 
 h2{
-  /* grid-area: auto; */
   font-family: gala, sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -184,6 +235,7 @@ h3 {
   background-color: #DE007A;
   border-radius: 20px 20px 0 0;
   margin-top: 0;
+  margin-bottom: 20px;
 }
 
 h4 {
@@ -216,17 +268,6 @@ h5{
   font-style: normal;
   line-height: 22px;
 }
-
-/* h8 {
-  color: #DE007A;
-  font-size: 20px;
-  font-family: open-sans, sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  white-space: nowrap;
-  line-height: 1px;
-  text-transform: uppercase;
-} */
 
 .centerCase {
   display: block;
@@ -266,15 +307,14 @@ h5{
   background-color: white;
   justify-content: center;
   align-items: center;
-
 }
-/* ****************************************************************** */
 
 
 
 
 /* ****************************************************************** */
 /* flip card */
+
 /* The flip card container */
 .flip-card {
   background-color: transparent;
@@ -297,9 +337,7 @@ h5{
 }
 
 /* horizontal flip  */
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
+.flip-card:hover .flip-card-inner {transform: rotateY(180deg);}
 
 /* Position front and back */
 .flip-card-front, .flip-card-back {
@@ -342,8 +380,6 @@ h5{
 
 
 
-/* ****************************************************************** */
-
 p {
   font-family: open-sans, sans-serif;
   font-weight: 400;
@@ -362,9 +398,7 @@ p {
   margin-right: 15px;
 }
 
-#bodySpan {
-  width: 100%;
-}
+#bodySpan {width: 100%;}
 
 .studies {
   width: 70%;
@@ -382,11 +416,8 @@ p {
   #lineGrad {
     min-height: 2px;
     text-align: left;
-    /* width: 850px; */
     z-index: 1;
     border: none;
-    /* position: relative; */
-    /* left: 50px; */
   }
 
   #lineGrad2 {
@@ -415,7 +446,6 @@ p {
         text-align: left;
         width: 100%;
         border: none;
-        margin-top: -30px;
       }
 
       .footLine {
@@ -423,7 +453,6 @@ p {
         margin-bottom: -100px;
       }
       
-
  .navigation:hover {
    color: #DE007A;
    font-weight: 600;
@@ -436,20 +465,15 @@ p {
    cursor: pointer;
  }
 
- .hamburger {
-  display: none;
-}
+ .hamburger {display: none;}
 
-.moreInfo {
-  display: none;
-}
-
-/* ****************************************************************** */
+.moreInfo {display: none;}
 
 
 
 /* ****************************************************************** */
 /* Case Studies */
+
 .tfcPhoto2 {
   height: 150px;
   width: 155px;
@@ -472,6 +496,7 @@ h6 {
   margin-top: 25px;
   margin-bottom: 20px;
 }
+
 .containerGrid2 {
   display: grid;
   height: span;
@@ -532,6 +557,7 @@ iframe {
   width: 250px; 
   height: 400px;
 }
+
 .largeProtoMobEd {
   float: none;
   width: 180px; 
@@ -542,11 +568,11 @@ iframe {
   margin-right: 10px;
   margin-left: 10px;
 }
+
 .sidebar {
   grid-area: auto;
   width: 210px;
   position: sticky;
-  /* margin-left: 20px; */
   margin-top: 15px;
   padding: 10px;
   margin-right: 50px;
@@ -570,8 +596,6 @@ ul {
   line-height: 27px;
   color: #797979;
 }
-/* https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci */
-
 
 .caseImages {
   width: 100%;
@@ -584,17 +608,14 @@ ul {
   height: auto;
 }
 
-.arrow {
-  color: #DE007A;
-}
+.arrow {color: #DE007A;}
 
 button.cardBack {
   padding: 15px;
   border-radius: 20px;
-    margin-top: 30px;
+  margin-top: 30px;
   background-color: #DE007A;
   color: white;
-
 }
 
 .butText {
@@ -606,17 +627,13 @@ button.cardBack {
   cursor: pointer;
   text-transform: uppercase;
 }
-/* ****************************************************************** */
 
 
 
 /* ****************************************************************** */
 /* expand text in hero */
-#panel, #flip {
-  /* padding: 5px; */
-  text-align: left;
-  
-}
+
+#panel, #flip {text-align: left;}
 
 #panel {
   padding: 0px;
@@ -632,75 +649,69 @@ button.more {
 
 
 
-/* ****************************************************************** */
-/* navigation dropdown */
-.dropbtn {
-  border: none;
-  cursor: pointer;
-  color: #797979;
-  background-color: white;
-  margin-top: 0px;
-  padding: 0;
-  font-family: open-sans, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 16px;
-  text-align: center;
-  padding-top: 65px;
-}
 
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #FBEEF1;
-  color: #5A5A5A;
-  overflow: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
   z-index: 1;
-  font-family: open-sans, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 14px;
-  text-transform: uppercase;
-  margin-top: 10px;
-  border-radius: 0px 0px 20px 20px;
+  top: 0;
+  left: 0;
+  background-color: #DE007A;
+  opacity: .9;
+  overflow-x: hidden;
+  transition: 0.5s;
 }
 
-.dropdown-content a {
-  color: 5A5A5A;
-  padding: 16px 16px;
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
   text-decoration: none;
+  font-size: 24px;
+  color: white;
   display: block;
+  transition: 0.3s;
+  font-weight: 600;
+  font-style: normal;
 }
 
-.dropdown-content a:hover {
-  background-color: #C8E6ED;
-  transform: scale(100%);
+.overlay a:hover, .overlay a:focus {color: #f1f1f1;}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
 }
-
-.dropdown:hover .dropdown-content {display: block;}
-
-.dropdown:hover .dropbtn {
-  color: #DE007A;
-font-family: open-sans, sans-serif;
-font-size: 16px;
-font-weight: 600;
-opacity: 100%;
-cursor: pointer;
-transform: scale(100%);
-}
+/* ****************************************************************** */
 
 
 
 
+
+
+
+
+/* ****************************************************************** */
 /* ****************************************************************** */
 /* mobile media query - normal */
+
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
 
   #navigation {
     position: fixed;
@@ -728,15 +739,12 @@ transform: scale(100%);
   .navigation {
       display: none;
   }
-  
 
-.mobileDetails {
-  display: inline-block;
-}
+  .mobileDetails {display: inline-block;}
 
-h3 {
-  display: none;
-}
+  h3 {display: none;}
+
+  h3.cardHeadBack {display: inline-block;}
 
   .bar {
     display: block;
@@ -746,30 +754,28 @@ h3 {
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     background-color: #DE007A;
-}
+  }
 
   .hamburger {
+    /* display: flex; */
     display: inline;
-    cursor: pointer;
     margin-right: 15%;
   }
 
   .logo {
-    /* margin-left: 30px; */
+    margin-left: 30px;
     width: 80%;
     height: auto;
   }
 
+  .content {
+    margin-top: 70px;
+    width: 100%;
+    align-content: center;
+    overflow-wrap: normal;
+  }
 
-/* hero */
-.content {
-  margin-top: 70px;
-  width: 100%;
-  align-content: center;
-  overflow-wrap: normal;
-}
-
-.content2 {
+  .content2 {
     margin-left: 10%;
     margin-right: 10%;
     width: auto;
@@ -777,6 +783,7 @@ h3 {
     align-content: center;
     overflow-wrap: normal;
   }
+
   .content3 {
     margin-left: 10%;
     margin-right: 10%;
@@ -793,6 +800,12 @@ h3 {
     overflow-wrap: normal;
   }
 
+  #flip {display: none;}
+
+  #panel {
+    padding: 0px;
+    display: inline;
+  }
 
   p {
     text-align: justify;
@@ -818,21 +831,17 @@ h3 {
     display: none;
   }
 
-    #lineGrad {
-      min-height: 2px;
-      width: auto;
-      z-index: 1;
-      border: none;
-      margin-left: 20px;
-    }
-
-    #lineGrad2 {
-      margin-bottom: 50px;
-    }
-
-  body {
-    background-image: none;
+  #lineGrad {
+    min-height: 2px;
+    width: auto;
+    z-index: 1;
+    border: none;
+    margin-left: 20px;
   }
+
+  #lineGrad2 {margin-bottom: 50px;}
+
+  body {background-image: none;}
 
   .myPhoto {
     align-self: flex-start;
@@ -845,9 +854,10 @@ h3 {
   }
 
 
+
  /* case studies */
  
- h2{
+h2{
   font-size: 36px;
   margin-top: 25px;
   text-align: center;
@@ -861,44 +871,40 @@ h3 {
   align-items: center;
   flex-direction: column;
 }
+
 .flex-container > div {
   margin: 10px;
   padding: 10px;
   font-size: 30px;
 }
 
-
 /* footer */
   .footerGrid {
     display:inline;
-    background-image: url("../images/gradient.png");
-    background-repeat: no-repeat;
-    background-position-y: 0;
+    background-image: none;
   }
 
   .childLogo {
     display: inline;
     padding: 0;
+    margin-bottom: 10px;
   }
   
   .childName {
     display: inline;
     text-align: center;
-    padding: 0;
+    margin-top: 20px;
   }
   
-  .footerGrid .navigation {
-    display: flex;
-    line-height: 20px;
-    padding-top: 8px;
-    text-align: center;
-    padding-bottom: 12px;
-  }
+  .footerGrid .navigation {display: none;}
 
   .footerGrid .social {
-    padding-top: 40px;
-    display: inline;
-    padding-right: 30px;
+    width: 20%;
+    display: inline-flex;
+    justify-content: center;
+    margin-left: 10%;
+    margin-bottom: 25px;
+    padding-top: 20px;
   }
 
   .footLine {
@@ -906,8 +912,6 @@ h3 {
     margin-bottom: 0px;
   }
 
-
-/* The flip card container */
 .flip-card {
   background-color: transparent;
   perspective: 1000px;
@@ -916,7 +920,6 @@ h3 {
   width: 335px;
 }
 
-/* container - front and back side */
 .flip-card-inner {
   position: relative;
   width: 335px;
@@ -928,17 +931,15 @@ h3 {
   border-radius: 20px;
 }
 
-/* horizontal flip  */
 .flip-card:click .flip-card-inner {
   transform: rotateY(180deg);
 }
 
-/* Position front and back */
 .flip-card-front, .flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
@@ -954,13 +955,13 @@ h3 {
 }
 
 .flipImg {
-  width: 300px;
+  width: 290px;
   height: auto;
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.2);
 }
 
 .flipImg2 {
-  width: 280px;
+  width: 270px;
   height: auto;
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.2);
 }
@@ -970,232 +971,55 @@ h3 {
   height: auto;
 }
 
-  }
-/* ****************************************************************** */
-
-
-
-
-/* ****************************************************************** */
-/* tablet media query */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
- 
-  #navigation {
-    display: center;
-    position: fixed;
-    width: 100%;
-    text-align: center;
-    transition: 0.3s;
-    background-color: white;
-    background-image: url("../images/gradient.png"), url("../images/puzzle_piece.png");
-    background-repeat: no-repeat;
-    background-position-x: auto;
-    background-position-y: 0;
-    background-size: cover;
-  }
-  
-  .headerGrid {
-    display:inline;
-    /* text-align: center; */
-    width: 100%;   
-    background-size: 100%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-top: 0;
-    margin-left: 30px;
-  }
-
-  .navigation {
-      display: none;
-  }
-  
-  .bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background-color: #DE007A;
+.topnav {
+  position: relative;
+  border-radius: 5px;
+  margin: 3px;
+  max-width: 100%;
 }
 
-  .hamburger {
-    display: inline;
-    cursor: pointer;
-  }
+.fa {transform: scale(180%);}
 
-  .logo {
-    margin-left: 30px;
-    width: 80%;
-    height: auto;
-  }
-
-
-/* hero */
-.content {
-  margin-top: 160px;
-  width: 100%;
-  align-content: center;
-  overflow-wrap: normal;
+#myLinks {
+  background-color: white;
+  border-radius: 20px;
+  margin-top: 20px;
 }
 
-.content2 {
-    margin-left: 10%;
-    margin-right: 10%;
-    width: auto;
-    height: auto;
-    align-content: center;
-    overflow-wrap: normal;
-  }
-  .content3 {
-    margin-left: 10%;
-    margin-right: 10%;
-    width: auto;
-    align-content: center;
-    overflow-wrap: normal;
-  }
+.topnav #myLinks {display: none;}
 
-  .content4 {
-    margin-left: 10%;
-    margin-right: 10%;
-    width: auto;
-    align-content: center;
-    overflow-wrap: normal;
-  }
-
-  /* #case1 {
-    width: 50%;
-    height: 50%;
-  } */
-
-
-  p {
-    text-align: justify;
-    margin-left: 30px;
-    margin-right: 40px;
-  }
-
-  
-  h1 {
-    color: #DE007A;
-    font-size: 42px;
-    font-family: gala, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    white-space: nowrap;
-    line-height: 80px;
-    padding-top: 60px;
-    margin-left: 20px;
-    text-shadow: 1px 1px rgba(255, 255, 255, .8);
-  }
-
-  button {
-    display: none;
-  }
-
-    #lineGrad {
-      min-height: 2px;
-      width: auto;
-      z-index: 1;
-      border: none;
-      margin-left: 20px;
-    }
-
-    #lineGrad2 {
-      margin-bottom: 50px;
-    }
-
-  body {
-    background-image: none;
-  }
-
-  .myPhoto {
-    align-self: flex-start;
-    z-index: -1;
-    float: right;
-    width: 38%;
-    position: relative;
-    padding-right: 15px;
-    padding-left: 8px;
-  }
-
-
- /* case studies */
- 
- h2{
-  font-size: 36px;
-  margin-top: 25px;
-  text-align: center;
+.topnav a {
+  color: #DE007A;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  display: inline-block;
 }
 
-.studies {
-  width: 100%;
-  align-content: center; 
-  height: 400;
+.topnav a.icon {
+  background: none;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
-.studies p {
-  color: #5A5A5A;
+.topnav a:hover {
+  color: #59ABD0;
 }
 
-/* .case1, .case2, .case3,  p {
-  margin-top: 30px;
-} */
-
-.studies #lineGrad {
-  display: none;
+.active {
+  background-color: none;
 }
 
-.case1, .case2, .case3 {
-  background-color: #F9E5EA;
-  border-radius: 20px 20px 20px 20px;
-  width: 90%;
-  padding: 0;
-  margin: auto;
-  /* align-content: space-around; */
-}
-
-
-.link {
-  margin-right: 35px;
-  /* margin-bottom: 40px; */
-  text-align: right;
-}
-
-/* footer */
-  .footerGrid {
-    display:inline;
-    background-image: url("../images/gradient.png");
-    background-repeat: no-repeat;
-    background-position-y: 0;
   }
 
-  .childLogo {
-    display: inline;
-    padding: 0;
-  }
-  
-  .childName {
-    display: inline;
-    text-align: center;
-    padding: 0;
-  }
-
-  .footerGrid .navigation {
-    display: list-item;
-    line-height: 20px;
-    padding-top: 10px;
-    text-align: center;
-
-  }
-
-  .footerGrid .social {
-    padding-top: 10px;
-  }
+/* end phone media query */
+  /* ****************************************************************** */
+  /* ****************************************************************** */
 
 
-  }
- 
-/* end tablet media */
-/* ****************************************************************** */
+
 
