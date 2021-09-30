@@ -188,7 +188,9 @@ ul {
 
   .containerGrid2 {
     display: grid;
-    height: span;
+    width: 65%;
+  /* margin: 0 auto; */
+    /* height: span; */
     padding: 200px 10% 30px 10%;
     grid-template-areas:
       "sidePhone" 
