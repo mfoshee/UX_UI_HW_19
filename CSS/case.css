@@ -1,536 +1,243 @@
-/* header */
+.cardSort {
+  margin: 0 auto;
+  display: flex;
+  padding-top: 0px;
+  padding-bottom: 0;
+}
 
-.navigation {
-    font-family: open-sans, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 16px;
-    color: #797979;
-    padding-top: 65px;
-    text-align: center;
-  }
-  
-  .headerGrid {
-    display:grid;
-    grid-template-columns: 5% 44% 16% 13% 10% 10%;
-    text-align: left;
-    width: 100%;   
-    background-size: 100%;
-    padding-top: 20px;
-  }
-  
-  .dropbtn {
-    color: #DE007A;
-    font-family: open-sans, sans-serif;
-    font-weight: 800;
-    font-style: normal;
-    font-size: 16px;
-    text-transform: uppercase;
-    cursor: pointer;
-    border: none;
-    background-color: white;
-  }
-  
-  .dropdown  {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #FBEEF1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    border-radius: 0 0 20px 20px;
-    margin-top: 10px;
-  }
-  
-  .dropdown-content a {
-    color: #5A5A5A;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-transform: uppercase;
-  }
-  
-  .dropdown-content a:hover {
-    background-color: #DCF2FC;
-    color: #5A5A5A;
-    font-weight: 600;
-  }
-  
-  .dropdown:hover .dropdown-content {display: block;}
-  
-  .dropdown:hover .dropbtn {background-color: none;}
-  
-  /* header end */
-  /* ********************************************************** */
-  
-  
-  
-  
-  /* ********************************************************** */
-  /* footer */
-  
-  .footerGrid {
-    display:grid;
-    grid-template-columns: 5% 5% 29% 14% 11% 8% 9% 5% 5% 5%;
-    margin-top: 100px; 
-    background-image: url("../images/gradient.png");
-    background-repeat: repeat-x;
-    padding-top: 30px;
-    text-align: center;
-  }
-  
-  .childName {
-  grid-area: auto;
-  text-align: left;
-  font-family: gala, sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 36px;
+h4 {
   color: #DE007A;
-  padding-left: 30px;
+  font-size: 32px;
+  font-family: open-sans-condensed, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 40px;
+  text-transform: uppercase;
+  text-align: left;
+  margin-top: 80px;
+}
+
+.findings {
+  color: #5A5A5A;
+  font-size: 18px;
+  font-family: open-sans, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 22px;
+}
+
+.flex-container2 {
+  display: flex;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+h6 {
+  color: #DE007A;
+  font-size: 24px;
+  font-family: open-sans-condensed, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  white-space: normal;
+  line-height: 30px;
+  text-transform: uppercase;
+  padding-right: 10%;
+  z-index: 1;
+  vertical-align: bottom;
+  overflow-wrap: normal;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.containerGrid2 {
+  display: grid;
+  height: span;
+  padding: 30px;
+  grid-template-areas:
+    "sidebar studyContent"
   }
-  
-  /* end footer */
-  /* **********************************************************  */
-  
-  
-  
-  /* ********************************************************** */
-  /* body */
-  
-  #panel {
-    font-family: open-sans, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 16px;
-    color: #797979;
-    padding-top: 65px;
-    text-align: center;
-    text-align: left;
-    border-radius: 20px;
-    padding: 5px;
-  }
-  
-  .mobileDetails {display: none;}
-  
-  .social {padding-top: 55px;}
-  
-  .logo {opacity: 100%;}
-  
-  a {color: #797979;}
-  
-  a:hover {
-    color: #DE007A;
-    text-decoration: none;
-  }
-  
-  .link {
-    color: #DE007A;
-    text-decoration: underline;
-    font-family: open-sans, sans-serif;
-    font-weight: 800;
-    font-style: normal;
-    font-size: 16px;
-    cursor: pointer;
-    text-transform: uppercase;
-  }
-  
-  .link:hover {
-    color: #59ABD0;
-    text-decoration: underline;
-    font-family: open-sans, sans-serif;
-    font-weight: 900;
-    font-size: 16px;
-  }
-  
-  button {
-    color: #DE007A;
-    font-family: open-sans, sans-serif;
-    font-weight: 800;
-    font-style: normal;
-    font-size: 18px;
-    text-transform: uppercase;
-    cursor: pointer;
-    border: none;
-    background-color: white;
-  }
-  
-  button:hover {transform: scale(105%);}
-  
-  body {
-    background-image: url("../images/puzzle_piece.png"), url("../images/gradient.png");
-    background-repeat: no-repeat;
-    background-position-x: 297px 0;
-    background-position-y: 0;
-    background-position: right top, left top;
-    font-family: sans-serif;
-    position: relative;
-  }
-  
-  .heroImg {
-    padding-top: 90px;
-    padding-bottom: 40px; 
-    display: right;
-  }
-  
-  .content {
-    width: 65%;
-    margin: 0 auto;
-  }
-  
-  .cardSort {
-    margin: 0 auto;
-    display: flex;
-  }
-  
-  .hello {
-    color: #DE007A;
-    font-size: 32px;
-    font-family: gala, sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    line-height: 10px;
-    white-space: nowrap;
-    display: block;
-  }
-  
-  h1 {
-    color: #DE007A;
-    font-size: 60px;
-    font-family: gala, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    white-space: nowrap;
-    margin: 0;
-  }
-  
-  
-  h2{
-    font-family: gala, sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 48px;
-    color: #DE007A;
-    text-align: center;
-    margin-top: 100px;
-    margin-bottom: 15px;
-  }
-  
-  h3 {
-    color: white;
-    font-size: 24px;
-    font-family: open-sans-condensed, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    white-space: normal;
-    line-height: 30px;
-    text-transform: uppercase;
-    padding: 20px;
-    text-align: center;
-    background-color: #DE007A;
-    border-radius: 20px 20px 0 0;
-    margin-top: 0;
-    margin-bottom: 20px;
-  }
-  
-  h4 {
-    color: #DE007A;
-    font-size: 32px;
-    font-family: open-sans-condensed, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    line-height: 40px;
-    text-transform: uppercase;
-    text-align: left;
-  }
-  
-  h5{
-    grid-area: auto;
-    font-family: gala, sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 48px;
-    color: #DE007A;
-    text-align: center;
-    margin-top: 42px;
-  }
-  
-  .findings {
-    color: #5A5A5A;
-    font-size: 18px;
-    font-family: open-sans, sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    line-height: 22px;
-  }
-  
-  .centerCase {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -35px;
-    margin-bottom: 70px;
-    width: 400px;
-    height: 5px;
-  }
-  
-  .myPhoto {
-    align-content: 186px;
-    align-self: flex-start;
-    z-index: -1;
-    float: right;
-    margin: 8px;
-    width: 359px;
-  }
-  
-  .flex-container {
-    display: flex;
-    background-color: white;
-    width: auto;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 150px;
-  }
-  .flex-container > div {
-    margin: 10px;
-    padding: 20px;
-    font-size: 30px;
-  }
-  
-  .flex-container2 {
-    display: flex;
-    background-color: white;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  
-  
-  
-  /* ****************************************************************** */
-  /* flip card */
-  
-  /* The flip card container */
-  .flip-card {
-    background-color: transparent;
-    perspective: 1000px;
-    border-radius: 20px;
-    height: 700px;
-    width: 335px;
-  }
-  
-  /* container - front and back side */
-  .flip-card-inner {
-    position: relative;
-    width: 335px;
-    height: 700px;
-    text-align: center;
-    transition: transform 1.2s;
-    transform-style: preserve-3d;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    border-radius: 20px;
-  }
-  
-  /* horizontal flip  */
-  .flip-card:hover .flip-card-inner {transform: rotateY(180deg);}
-  
-  /* Position front and back */
-  .flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
-    backface-visibility: hidden;
-  }
-  
-  .flip-card-front {
-    border-radius: 20px;
-    background-color: #F9E5EA;
-  }
-  
-  .flip-card-back {
-    border-radius: 20px;
-    background-color: #F9E5EA;
-    transform: rotateY(180deg);
-  }
-  
-  .flipImg {
-    width: 300px;
-    height: auto;
-    box-shadow: 0 4px 4px 0 rgba(0,0,0,0.2);
-  }
-  
-  .flipImg2 {
-    width: 280px;
-    height: auto;
-    box-shadow: 0 4px 4px 0 rgba(0,0,0,0.2);
-  }
-  
-  .flipImg3 {
-    width: 270px;
-    height: auto;
-  }
-  /* flip card end */
-  /* ****************************************************************** */
-  
-  
-  
-  p {
-    font-family: open-sans, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    display: left;
-    font-size: 18px;
-    line-height: 27px;
-    color: #797979;
-  }
-   
-  .studies p {
-    margin-right: 15px;
-    color: #5A5A5A;
-    text-align: left;
-    margin-left: 15px;
-    margin-right: 15px;
-  }
-  
-  #bodySpan {width: 100%;}
-  
-  .studies {
-    width: 70%;
-    margin: 0 auto;
-    margin-top: 20px;
-  }
-  
-  #lineGrad {
-    background: #DE007A;
-    background: -moz-linear-gradient(left, #DE007A 0%, #AA6CA6 50%, #59ABD0 100%);
-    background: -webkit-linear-gradient(left, #DE007A 0%, #AA6CA6 50%, #59ABD0 100%);
-    background: linear-gradient(to right, #DE007A 0%, #AA6CA6 50%, #59ABD0 100%);
-    }
-  
-    #lineGrad {
-      min-height: 2px;
-      text-align: left;
-      z-index: 1;
-      border: none;
-    }
-  
-    #lineGrad2 {
-      background: #DE007A;
-      background: -moz-linear-gradient(left, #DE007A 0%, #AA6CA6 50%, #59ABD0 100%);
-      background: -webkit-linear-gradient(left, #DE007A 0%, #AA6CA6 50%, #59ABD0 100%);
-      background: linear-gradient(to right, #DE007A 0%, #AA6CA6 50%, #59ABD0 100%);
-      }
-    
-      #lineGrad2 {
-        min-height: 2px;
-        text-align: left;
-        width: 350px;
-        border: none;
-      }
-  
-      #lineGrad3 {
-        background: #DE007A;
-        background: -moz-linear-gradient(left, #DE007A 0%, #AA6CA6 50%, #59ABD0 100%);
-        background: -webkit-linear-gradient(left, #DE007A 0%, #AA6CA6 50%, #59ABD0 100%);
-        background: linear-gradient(to right, #DE007A 0%, #AA6CA6 50%, #59ABD0 100%);
-        }
-      
-        #lineGrad3 {
-          min-height: 2px;
-          text-align: left;
-          width: 100%;
-          border: none;
-        }
-  
-        .footLine {
-          margin-top: 100px;
-          margin-bottom: -100px;
-        }
-        
-   .navigation:hover {
-     color: #DE007A;
-     font-weight: 600;
-     opacity: 100%;
-     cursor: pointer;
-   }
-  
-   .social:hover {
-     transform: scale(1.1, 1.1);
-     cursor: pointer;
-   }
-  
-   .hamburger {display: none;}
-  
-  .moreInfo {display: none;}
-  
-  
-  
-  /* ****************************************************************** */
-  /* Case Studies */
-  
-  .tfcPhoto2 {
-    height: 150px;
-    width: 155px;
-    margin-top: 65px;
-  }
-  
-  h6 {
-    color: #DE007A;
-    font-size: 24px;
-    font-family: open-sans-condensed, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    white-space: normal;
-    line-height: 30px;
-    text-transform: uppercase;
-    padding-right: 10%;
-    z-index: 1;
-    vertical-align: bottom;
-    overflow-wrap: normal;
-    margin-top: 25px;
-    margin-bottom: 20px;
-  }
-  
+
+iframe {
+  float: none;
+  width: 210px; 
+  height: 510px;
+  border-radius: 20px;
+  border: 2px solid #DE007A;
+}
+
+.edSide {
+  float: none;
+  width: 210px; 
+  height: 190px;
+  border-radius: 20px;
+  border: 2px solid #DE007A;
+  background-color: #797979;
+}
+
+.tripSide {
+  float: none;
+  width: 210px; 
+  height: 310px;
+  border-radius: 20px;
+  border: 2px solid #DE007A;
+  background-color: #797979;
+}
+
+.largeProtoDesk {
+  float: none;
+  width: 600px; 
+  height: 400px;
+  margin-right: 50px;
+}
+
+.largeProtoDeskEd {
+  float: none;
+  width: 480px; 
+  height: 400px;
+  margin-right: 30px;
+}
+
+.largeProtoTabED {
+  float: none;
+  width: 280px; 
+  height: 400px;
+  margin-right: 30px;
+}
+
+.largeProtoMob {
+  float: none;
+  width: 250px; 
+  height: 400px;
+}
+
+.largeProtoMobEd {
+  float: none;
+  width: 180px; 
+  height: 400px;
+}
+
+.margin {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.sidebar {
+  grid-area: auto;
+  width: 210px;
+  position: sticky;
+  margin-top: 15px;
+  padding: 10px;
+  margin-right: 50px;
+}
+
+.sidebarPhone {
+  display: none;
+}
+
+.studyContent {
+  grid-area: auto;
+  width: 80%;
+  text-align: left;
+  padding: 30px;
+}
+
+ul {
+  color: #797979;
+  font-size: 18px;
+  font-family: open-sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  display: left;
+  font-size: 18px;
+  line-height: 27px;
+  color: #797979;
+}
+
+.caseImages {
+  width: 100%;
+  height: auto;
+}
+
+.caseImages2 {
+  width: 80%;
+  padding-right: 50px;
+  height: auto;
+}
+
+.arrow {color: #DE007A;}
+
+
+
+.butText {
+  color: white;
+  font-family: open-sans, sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 16px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+
+
+
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
   .containerGrid2 {
     display: grid;
     height: span;
-    padding: 30px;
+    padding: 200px 10% 30px 10%;
     grid-template-areas:
-      "sidebar studyContent"
+      "sidePhone" 
+      "studyContent"
     }
+
+  .sidebar {
+    display: none;
+  }
+
+  .sidePhone {
+    display: inline-block;
+    width: 100%;
+  }
   
+  .studyContent {
+    text-align: justify;
+    padding: 0px;
+    width: 100%;
+  }
+
   iframe {
     float: none;
-    width: 210px; 
-    height: 510px;
+    width: 85%; 
+    height: 80vh;
+    margin: 30px 0px 20px 30px;
     border-radius: 20px;
     border: 2px solid #DE007A;
+    align-items: center;
   }
   
   .edSide {
-    float: none;
+    /* float: none;
     width: 210px; 
-    height: 190px;
+    height: 190px; */
     border-radius: 20px;
     border: 2px solid #DE007A;
     background-color: #797979;
   }
   
   .tripSide {
-    float: none;
+    /* float: none;
     width: 210px; 
-    height: 310px;
+    height: 310px; */
     border-radius: 20px;
     border: 2px solid #DE007A;
     background-color: #797979;
   }
-  
+
   .largeProtoDesk {
     float: none;
     width: 600px; 
@@ -540,487 +247,69 @@
   
   .largeProtoDeskEd {
     float: none;
-    width: 480px; 
-    height: 400px;
+    width: 100%; 
+    height: auto;
     margin-right: 30px;
   }
   
   .largeProtoTabED {
     float: none;
-    width: 280px; 
-    height: 400px;
+    width: 100%; 
+    height: auto;
     margin-right: 30px;
   }
   
   .largeProtoMob {
     float: none;
-    width: 250px; 
-    height: 400px;
+    width: 50%; 
+    height: 90vh;
+    justify-content: center;
   }
   
   .largeProtoMobEd {
     float: none;
-    width: 180px; 
-    height: 400px;
-  }
-  
-  .margin {
-    margin-right: 10px;
-    margin-left: 10px;
-  }
-  
-  .sidebar {
-    grid-area: auto;
-    width: 210px;
-    position: sticky;
-    margin-top: 15px;
-    padding: 10px;
-    margin-right: 50px;
-  }
-  
-  .studyContent {
-    grid-area: auto;
-    width: 80%;
-    text-align: left;
-    padding: 30px;
-  }
-  
-  ul {
-    color: #797979;
-    font-size: 18px;
-    font-family: open-sans, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    display: left;
-    font-size: 18px;
-    line-height: 27px;
-    color: #797979;
+    width: 100%; 
+    height: auto;
   }
   
   .caseImages {
     width: 100%;
     height: auto;
   }
-  
-  .caseImages2 {
-    width: 80%;
-    padding-right: 50px;
-    height: auto;
+
+  p {
+    text-align: justify;
+  width: 85%;
   }
-  
-  .arrow {color: #DE007A;}
-  
-  button.cardBack {
-    padding: 15px;
-    border-radius: 20px;
-    margin-top: 30px;
-    background-color: #DE007A;
-    color: white;
+
+  h6 {
+    margin-top: 35px;
+    margin-bottom: 0px;
+    margin-left: 20px;
   }
-  
-  .butText {
-    color: white;
-    font-family: open-sans, sans-serif;
-    font-weight: 800;
-    font-style: normal;
-    font-size: 16px;
-    cursor: pointer;
-    text-transform: uppercase;
-  }
-  
-  
-  
-  /* ****************************************************************** */
-  /* expand text in hero */
-  
-  #panel, #flip {text-align: left;}
-  
-  #panel {
-    padding: 0px;
-    display: none;
-  }
-  button.more {
+
+  h4 {
     color: #DE007A;
-    background-color: white;
-    margin-top: 0px;
-    padding: 0;
-  }
-  /* ****************************************************************** */
-  
-  
-  
-  
-  
-  .overlay {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #DE007A;
-    opacity: .9;
-    overflow-x: hidden;
-    transition: 0.5s;
-  }
-  
-  .overlay-content {
-    position: relative;
-    top: 25%;
-    width: 100%;
-    text-align: center;
-    margin-top: 30px;
-  }
-  
-  .overlay a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 24px;
-    color: white;
-    display: block;
-    transition: 0.3s;
-    font-weight: 600;
-    font-style: normal;
-  }
-  
-  .overlay a:hover, .overlay a:focus {color: #f1f1f1;}
-  
-  .overlay .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
-  }
-  /* ****************************************************************** */
-  
-  
-  
-  
-  
-  
-  
-  
-  /* ****************************************************************** */
-  /* ****************************************************************** */
-  /* mobile media query - normal */
-  
-  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-  
-    .overlay a {font-size: 20px}
-    .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-    }
-  
-    #navigation {
-      position: fixed;
-      width: 100%;
-      text-align: center;
-      transition: 0.3s;
-      background-color: white;
-      background-image: url("../images/gradient.png"), url("../images/puzzle_piece.png");
-      background-repeat: no-repeat;
-      background-position-y: 0;
-      background-size: cover;
-    }
-    
-    .headerGrid {
-      display:flex;
-      width: 100%;   
-      background-size: 100%;
-      padding-top: 20px;
-      margin-right: 20px;
-      padding-bottom: 20px;
-      margin-top: 0;
-      margin-left: 30px;
-    }
-  
-    .navigation {
-        display: none;
-    }
-  
-    .mobileDetails {display: inline-block;}
-  
-    h3 {display: none;}
-  
-    h3.cardHeadBack {display: inline-block;}
-  
-    .bar {
-      display: block;
-      width: 25px;
-      height: 3px;
-      margin: 5px auto;
-      -webkit-transition: all 0.3s ease-in-out;
-      transition: all 0.3s ease-in-out;
-      background-color: #DE007A;
-    }
-  
-    .hamburger {
-      display: flex;
-      display: inline;
-      margin-right: 15%;
-    }
-  
-    .logo {
-      margin-left: 30px;
-      width: 80%;
-      height: auto;
-    }
-  
-    .content {
-      margin-top: 70px;
-      width: 100%;
-      align-content: center;
-      overflow-wrap: normal;
-    }
-  
-    .content2 {
-      margin-left: 10%;
-      margin-right: 10%;
-      width: auto;
-      height: auto;
-      align-content: center;
-      overflow-wrap: normal;
-    }
-  
-    .content3 {
-      margin-left: 10%;
-      margin-right: 10%;
-      width: auto;
-      align-content: center;
-      overflow-wrap: normal;
-    }
-  
-    .content4 {
-      margin-left: 10%;
-      margin-right: 10%;
-      width: auto;
-      align-content: center;
-      overflow-wrap: normal;
-    }
-  
-    #flip {display: none;}
-  
-    #panel {
-      padding: 0px;
-      display: inline;
-    }
-  
-    p {
-      text-align: justify;
-      margin-left: 30px;
-      margin-right: 40px;
-    }
-  
-    
-    h1 {
-      color: #DE007A;
-      font-size: 42px;
-      font-family: gala, sans-serif;
-      font-weight: 700;
-      font-style: normal;
-      white-space: nowrap;
-      line-height: 80px;
-      padding-top: 60px;
-      margin-left: 20px;
-      text-shadow: 1px 1px rgba(255, 255, 255, .8);
-    }
-  
-    .dropdown  {
-      display: none;
-    }
-  
-    #lineGrad {
-      min-height: 2px;
-      width: auto;
-      z-index: 1;
-      border: none;
-      margin-left: 20px;
-    }
-  
-    #lineGrad2 {margin-bottom: 50px;}
-  
-    body {background-image: none;}
-  
-    .myPhoto {
-      align-self: flex-start;
-      z-index: -1;
-      float: right;
-      width: 38%;
-      position: relative;
-      padding-right: 15px;
-      padding-left: 8px;
-    }
-  
-  
-  
-   /* case studies */
-   
-  h2{
-    font-size: 36px;
-    margin-top: 25px;
-    text-align: center;
-  }
-  
-  .flex-container {
-    display: flex;
-    background-color: white;
-    width: auto;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  
-  .flex-container > div {
-    margin: 10px;
-    padding: 10px;
-    font-size: 30px;
-  }
-  
-  /* footer */
-    .footerGrid {
-      display:inline;
-      background-image: none;
-    }
-  
-    .childLogo {
-      display: inline;
-      padding: 0;
-      margin-bottom: 10px;
-    }
-    
-    .childName {
-      display: inline;
-      text-align: center;
-      margin-top: 20px;
-    }
-    
-    .footerGrid .navigation {display: none;}
-  
-    .footerGrid .social {
-      width: 20%;
-      display: inline-flex;
-      justify-content: center;
-      margin-left: 10%;
-      margin-bottom: 25px;
-      padding-top: 20px;
-    }
-  
-    .footLine {
-      margin-top: 100px;
-      margin-bottom: 0px;
-    }
-  
-  .flip-card {
-    background-color: transparent;
-    perspective: 1000px;
-    border-radius: 20px;
-    height: 700px;
-    width: 335px;
-  }
-  
-  .flip-card-inner {
-    position: relative;
-    width: 335px;
-    height: 700px;
-    text-align: center;
-    transition: transform 1.5s;
-    transform-style: preserve-3d;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    border-radius: 20px;
-  }
-  
-  .flip-card:click .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-  
-  .flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-  }
-  
-  .flip-card-front {
-    border-radius: 20px;
-    background-color: #F9E5EA;
-  }
-  
-  .flip-card-back {
-    border-radius: 20px;
-    background-color: #F9E5EA;
-    transform: rotateY(180deg);
-  }
-  
-  .flipImg {
-    width: 290px;
-    height: auto;
-    box-shadow: 0 4px 4px 0 rgba(0,0,0,0.2);
-  }
-  
-  .flipImg2 {
-    width: 270px;
-    height: auto;
-    box-shadow: 0 4px 4px 0 rgba(0,0,0,0.2);
-  }
-  
-  .flipImg3 {
-    width: 270px;
-    height: auto;
-  }
-  
-  .topnav {
-    position: relative;
-    border-radius: 5px;
-    margin: 3px;
-    max-width: 100%;
-  }
-  
-  .fa {transform: scale(180%);}
-  
-  #myLinks {
-    background-color: white;
-    border-radius: 20px;
-    margin-top: 20px;
-  }
-  
-  .topnav #myLinks {display: none;}
-  
-  .topnav a {
-    color: #DE007A;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 32px;
+    font-family: open-sans-condensed, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 40px;
     text-transform: uppercase;
-    display: inline-block;
+    text-align: left;
+    margin-top: 40px;
   }
-  
-  .topnav a.icon {
-    background: none;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  
-  .topnav a:hover {
-    color: #59ABD0;
-  }
-  
-  .active {
-    background-color: none;
-  }
-  
-    }
-  
-  /* end phone media query */
-    /* ****************************************************************** */
-    /* ****************************************************************** */
-  
-  
-  
-  
-  
+
+li {
+  width: 90%;
+}
+
+
+.caseImages {
+  width: 90%;
+  padding-left: 3%;
+  height: auto;
+}
+
+
+}
