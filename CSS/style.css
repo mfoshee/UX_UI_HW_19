@@ -138,6 +138,7 @@ a:hover {
   font-size: 16px;
   cursor: pointer;
   text-transform: uppercase;
+  letter-spacing: .01em;
 }
 
 .link:hover {
@@ -677,7 +678,9 @@ h2{
 }
 
 /* footer */
-  .footerGrid {
+
+
+.footerGrid {
     display:inline;
     background-image: none;
   }
