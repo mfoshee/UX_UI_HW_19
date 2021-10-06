@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michele Foshee Portfolio</title>
+
+    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="./vendor/Magnific-Popup/dist/magnific-popup.css">
+
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/case.css">  
     <script src="https://use.fontawesome.com/b283045d88.js"></script> 
-    <title>Michele Foshee Portfolio</title>
     <link rel="stylesheet" href="https://use.typekit.net/wmf3fza.css">
 </head>
 
@@ -131,14 +136,20 @@
     </div>    
 </section>
 
+
+
+
+
+
 <!-- ============ gallery area ======================== -->
 <!-- https://www.youtube.com/watch?v=dgKSqz3it50 -->
-<!-- add carousel at 2:08 -->
+<!-- add gallery at 1:42  --  add carousel at 2:08 -->
 
-<section class="project area">
+
+<section class="project-area">
     <div class="container">
         <div class="project-title pb-5">
-            <h2 class="text-uppercase title-h1">Related Work</h2>
+            <h1 class="text-uppercase title-h1">Related Work</h1>
         </div>
 
         <div class="button-group">
@@ -147,73 +158,80 @@
             <button type="button" data-filter=".branding">Branding</button>
             <button type="button" data-filter=".marketing">Marketing</button>
             <button type="button" data-filter=".illustration">Illustration</button>
-            <button type="button" data-filter=".art">Fine Art</button>
+            <button type="button" data-filter=".fineArt">Fine Art</button>
         </div>
 
         <div class="row grid">
-
             <div class="col-lg-4 col-md-6 col-sm-12 element-item design">
                 <div class="our-project">
                     <div class="img">
-                        <img src="./images/design.jpg" alt="Graphic Design Sample" width="100%">
+                        <a class="test-popup-link" href="./images/design.jpg">
+                            <img src="./images/design.jpg" alt="portfolio-1" class="img-fluid">
+                        </a>
                     </div>
                     <div class="title py-4">
                         <h4 class="text-uppercase">Kids First Campaign Brochure</h4>
-                        <span class="text-secondary">design</span>
-                    </div>
+                        <span class="text-secondary">Graphic Design &amp; Art Direction, Portfolio</span>
                     </div>
                 </div>
             </div>
-
-            <div class="col-lg-4 col-md-6 col-sm-12 element-item branding"> 
+            <div class="col-lg-4 col-md-6 col-sm-12 element-item branding">
                 <div class="our-project">
                     <div class="img">
-                        <img src="./images/branding.png" alt="Branding Sample" width="100%">
+                        <a class="test-popup-link" href="./images/branding.png">
+                            <img src="./images/branding.png" alt="Branding Sample" class="img-fluid">
+                        </a>
                     </div>
                     <div class="title py-4">
                         <h4 class="text-uppercase">The Children's Guild Alliance Rebrand</h4>
-                        <span class="text-secondary">branding</span>
+                        <span class="text-secondary">Branding, Portfolio</span>
                     </div>
                 </div>
-             </div>
-
-            <div class="col-lg-4 col-md-6 col-sm-12 element-item marketing"> 
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 element-item marketing">
                 <div class="our-project">
                     <div class="img">
-                        <img src="./images/marketing-cover.png" alt="Marketing Sample" width="100%">
+                        <a class="test-popup-link" href="./images/marketing-cover.png">
+                            <img src="./images/marketing-cover.png" alt="Marketing Sample" class="img-fluid">
+                        </a>
                     </div>
                     <div class="title py-4">
                         <h4 class="text-uppercase">ACVS Surgery Summit Social Media Campaign</h4>
-                        <span class="text-secondary">marketing</span>
+                        <span class="text-secondary">Marketing, Portfolio</span>
                     </div>
                 </div>
             </div>
-
-            <div class="col-lg-4 col-md-6 col-sm-12 element-item illustration"> 
+            <div class="col-lg-4 col-md-6 col-sm-12 element-item illustration">
                 <div class="our-project">
                     <div class="img">
-                        <img src="./images/gsa.jpg" alt="Illustration Sample" width="100%">
+                        <a class="test-popup-link" href="./images/gsa.jpg">
+                            <img src="./images/gsa.jpg" alt="Illustration Sample" class="img-fluid">
+                        </a>
                     </div>
                     <div class="title py-4">
                         <h4 class="text-uppercase">GSA: Facilities Management & the Environment</h4>
-                        <span class="text-secondary">illustration</span>
-                    </div>
-                </div>
-             </div>
-
-            <div class="col-lg-4 col-md-6 col-sm-12 element-item art"> 
-                <div class="our-project">
-                    <div class="img">
-                        <img src="./images/monkey-painting.jpg" alt="Fine Art Sample" width="100%">
-                    </div>
-                    <div class="title py-4">
-                        <h4 class="text-uppercase">Monkeys - Acrylic on Canvas, 12"x12"</h4>
-                        <span class="text-secondary">art</span>
+                        <span class="text-secondary">Illustration, Portfolio</span>
                     </div>
                 </div>
             </div>
-    
-        </div>    
+            <div class="col-lg-4 col-md-6 col-sm-12 element-item fineArt">
+                <div class="our-project">
+                    <div class="img">
+                        <a class="test-popup-link" href="./images/monkey-painting.jpg">
+                            <img src="./images/monkey-painting.jpg" alt="Fine Art Sample" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="title py-4">
+                        <h4 class="text-uppercase">Monkeys - Acrylic on Canvas, 12"x12"</h4>
+                        <span class="text-secondary">Fine Art, Portfolio</span>
+                    </div>
+                </div>
+            </div>
+         
+          
+            
+        </div>
+    </div>
 </section>
 
 
@@ -249,6 +267,7 @@
    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
    crossorigin="anonymous"></script>
  <script src="js/index.js"></script>
- <script src="./vendor/isotope/isotope.min.js"
+ <script src="./vendor/isotope/isotope.min.js"></script>
+ <script src="./vendor/Magnific-Popup/dist/jquery.magnific-popup.min.js"></script>
  <script src="js/main.js"></script>
  </html>
