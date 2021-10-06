@@ -16,8 +16,3 @@ $(document).ready(function(){
     document.getElementById("myNav").style.width = "0%";
   };
 
-
-
-  // $('.carousel').carousel({
-  //   interval: 2000
-  // })
