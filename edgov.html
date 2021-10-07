@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/style.css"> 
+    <link rel="stylesheet" href="CSS/case.css"> 
+    <script src="https://use.fontawesome.com/b283045d88.js"></script> 
+    <title>The U.S. Department of Education Redesign Case Study</title>
+    <link rel="stylesheet" href="https://use.typekit.net/wmf3fza.css">
+</head>
+
+    
+    <!-- navigation -->
+
+<body>
+    <section id="navigation">
+        <header class="headerGrid">
+            <div><br></div>
+        <div class="logo"><a href="index.html">
+            <picture>
+                <source srcset="images/logo-small.png" media="(max-width: 767px)">
+                <source srcset="images/logo.png">
+                <img src="images/logo.png" alt="Logo" width="auto">
+            </picture>
+        </a></div>
+        
+        <div class="dropdown">
+            <button class="dropbtn navigation"><a href="#UX/UI_Case_Studies" class="text-decoration-none text-color-#DE007A">UX/UI CASE STUDIES</a> </button>
+        <div class="dropdown-content">
+              <a href="tfc.html">The Frederick Center</a>
+              <a href="tripapp.html">SafeTrip! Travel</a>
+              <a href="edgov.html">U.S. Dept. of Ed.</a>
+        </div>
+        </div>
+        <div class="navigation"><a href="./related.html">RELATED WORK</a> </div>
+        <div class="navigation"><a href="images/MFoshee_resume_100421.pdf" target="blank">RESUME</a></div>
+        <div class="navigation"><a href="mailto:mfoshee@gmail.com" target="blank">CONTACT<br></a></div>
+            
+        <div class="hamburger">
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="index.html">HOME</a>
+                <a href="#UX/UI_Case_Studies">UX/UI CASE STUDIES</a>
+                <a href="related.html">RELATED WORK</a>
+                <a href="../UX_UI_HW_19/images/mfoshee_resume_093021.pdf" target="blank">RESUME</a>
+                <a href="mailto:mfoshee@gmail.com" target="blank">CONTACT</a>
+            </div>
+          </div>
+            <span style="font-size:30px;cursor:pointer;color:#DE007A" onclick="openNav()">&#9776; </span>
+        </header>
+        </section>
+
+
+<section>
+    <div class="containerGrid2">
+        <div class="sidebar">
+            <h6>U.S DEPARTMENT OF EDUCATION WEBSITE REDESIGN (prototype)</h6>
+            <iframe class="edSide" src="https://xd.adobe.com/embed/c6d6af80-7061-4144-9504-6f0fbda7b3f0-9385/" allowfullscreen></iframe>
+            <p>Government websites are loaded with information, data, resources, and links to other related websites. The information is often  overwhelming. How can we redesign this website to make the process of learning education policies, data, resources, loan &amp; grant information, updates &amp; news, and other important information easier for the user?
+            </p>
+            <br>
+            <h6>UX/UI TEAM</h6>
+            <p><span class="findings"> Individual <br></span> <i>(information architecture, responsive design, user testing, style guide, multiple iterations, and final prototype)</i>: <br>Michele Foshee
+                <br><br>
+                <span class="findings"> Team <br></span> <i>(UI analysis, redlines & user path, initial usability tests, heuristic evaluations, and InVision Boards)</i>: <br>Salma Alwi, <br>Michele Foshee, <br>and Christina Kim</p>
+            <br>
+            <h6>OUR SOLUTION</h6>
+            <p>See prototype:<br>
+                <a class="link" href="https://xd.adobe.com/view/c6d6af80-7061-4144-9504-6f0fbda7b3f0-9385/" target="blank">desktop</a><br>
+                <a class="link" href="https://xd.adobe.com/view/1b5f2903-36ee-43a9-a559-5e2e011c080d-4e0c/" target="blank">tablet</a><br>
+                <a class="link" href="https://xd.adobe.com/view/fe6b2e6b-e311-4172-b047-09a86892cfd4-ab38/" target="blank">mobile</a><br>
+
+            </p>
+            </div>
+
+            <div class="studyContent"> 
+                <h4 class=""> INITIAL RESEARCH &amp; ANALYSIS</h4>
+                <hr id="lineGrad3">
+                <p>At the discovery phase of our project, we conducted a UI pattern redline and analysis, a heuristic evaluation, and UI color accessibility analysis to determine where the site needed improvement.</p>
+               <br>
+                <p class="findings">What did we find?</p>
+                <ul>
+                    <li>The site would benefit from more white space. </li>
+                    <li>Text should be more concise.</li>
+                    <li>Users’ location on the site should be better defined. </li>
+                    <li>Compelling visuals are needed. </li>
+                    <li>Navigation would benefit from streamlining. </li>
+                    <li>Hierarchy of information is difficult to discern. </li>
+                    <li>Color accessibility is failing in some areas, especially in text over images.</li>
+                </ul>
+                    <h6>USABILITY TESTING</h6>
+                    <p>We conducted usability tests with five users to gain a better understanding of the current site’s functionality and how users interact with it.</p>
+                    <p class="findings">What did we find?</p>
+                    <ul>
+                        <li>Users had to do a lot of scrolling on mobile devices to find the necessary information.</li>
+                        <li>Main headings/categories seem to be mostly intuitive for finding what users need.</li>
+                        <li>Content is too text heavy causing users to lose focus.</li>
+                        <li>It is hard for users to distinguish hierarchy.</li>
+                        <li>The quantity of links on the landing page makes it confusing and overwhelming for users.</li>
+                    </ul>
+                    <h6>INFORMATION ARCHITECTURE (IA)</h6>
+                    <p>While our user base is quite diverse, including students, parents, and professionals, we created a user persona based on a parent of a special needs student.</p>
+                    <img class="caseImages" src="images/ed_persona.png" alt="User Persona">
+                    <br><br>
+                    <h6>DATA SYNTHESIS</h6>
+                    <p>One of the key focuses in this redesign is the IA and usability of the site. We created mood boards, conducted a LATCH analysis, and held three card sorting sessions to determine the needs of our users and establish our UI navigation.</p>
+                    <p class="findings">What did we find?</p>
+                <section class="heroImg cardSort">
+                    <ul>
+                        <li>There is a lot of crossover of information – much of the content can be condensed into one category. </li>
+                        <li>The site would benefit from a quick links section.</li>
+                        <li>Features section could be consolidated to include press releases, Dr. Cardona, etc.</li>
+                        <li>Mission can be in about us. </li>
+                        <li>Some headings are not intuitive enough - not everyone looked for statistics within data. </li>
+                        <li>On mobile, there seemed confusion about where to click. </li>
+                        <li>Some naming conventions did not explain the content it linked to.</li>
+                        <li>Should be simplified into three main navigation sections: grants and loans, information & resources, about us.</li>
+                    </ul>
+                    <img class="myPhoto" src="images/ed_cardSort.png" alt="Card Sorting Photo">
+                </section>
+                    <h6>Sitemap</h6>
+                    <img class="caseImages" src="images/ed_sitemap.png" alt="Affinity Diagram">
+                    <br><br>
+                    <hr id="lineGrad3" class="footLine">
+                    <br><br><br><br><br><br>
+                    <h6>Navigation</h6>
+                    <img class="caseImages" src="images/ed_navigation.png" alt="Navigation">
+                    <br><br><br>
+                    <h4 class="">visual design &amp; style guide</h4>
+                    <hr id="lineGrad3">
+                    <p>After conducting a brand voice analysis and referring back to our color accessibility analysis, we created a style tile to define the look and feel that the new website would communicate.</p>
+                    <br>
+                    <img class="caseImages" src="images/ed_styletile.png" alt="Style Guide">
+                    <br><br><br>
+                    <h4 class="">responsive design &amp; user testing</h4>
+                    <hr id="lineGrad3">
+                    <p>Not only should this website be visually appealing, it should be useful and intuitive for our users on any device. Using the insights gained from testing the low fidelity prototypes and navigation samples, high fidelity protoypes were created, paying close attention to concerns for each type of device.</p>
+                    <p class="findings">User feedback to guide the multiple iterations:</p>
+                    <ul>
+                        <li><i>Problem:</i> Purpose and mission are unclear
+                            <br>
+                            <i>Solution:</i> Enlarged text for Mission statement and other sections below</li>
+                            <li><i>Problem:</i> Reads as a flyer to some users 
+                            <br>
+                            <i>Solution:</i> Gallery is active and timed, that should resolve this issue</li>
+                            <li><i>Problem:</i> Reads more as a resource for Federal Student Aid
+                            <br>
+                            <i>Solution:</i> Make the button less prominent and add tagline</li>
+                            <li>Problem:</i> Dr. Cardona as first image in carousel did not appeal to users
+                            <br>
+                            <i>Solution:</i> Changed the order of the images</li>
+                            <li>Problem:</i> Not enough second/third tier navigation options to find what they needed
+                            <br>
+                            <i>Solution:</i> Restructured the navigation</li>
+                            <li><i>Problem:</i> Cards with navigation were redundant
+                            <br>
+                            <i>Solution:</i> Removed navigation from cards and replaced with descriptions</li>
+                            <li><i>Problem:</i> Color choices at the bottom of the home page makes it read as if everything that follows is about COVID
+                            <br>
+                            <i>Solution:</i> Changed colors of the cards below the COVID section to differentiate it</li>
+                    </ul>
+                    <br>
+                    <h4 class="">Iterations</h4>
+                    <hr id="lineGrad3">
+                    <img class="caseImages" src="images/ed_iterations.png" alt="Navigation Iterations">
+                    <br><br><br><br><br>
+                    <hr id="lineGrad3">
+                    <br><br><br>
+                    <br>
+                    <img class="caseImages" src="images/ed_iterations2.png" alt="Iterations">
+                    <br><br>
+                    <h4 class="">LESSONS LEARNED</h4>
+                    <hr id="lineGrad3">
+                    <p>This website redesign provided the challenge of considering accessibility and compliance, especially with color and text. It posed the challenge of creating pleasing color palettes within the brand of the Department of Education that are also accessible for most. 
+                        <br><br>
+                        Additionally, we learned that although one element may need to be easily accessible (i.e.: the Student Aid information), the placement must still be considered very carefully so that it does not overshadow the remaining information. 
+                        <br><br>
+                        We also learned that making a site that is extremely text and resource heavy requires close attention to hierarchy of information and white space.   </p>
+                    <h6>My Solution</h6>
+                    <iframe class="largeProtoDeskEd" src="https://xd.adobe.com/embed/c6d6af80-7061-4144-9504-6f0fbda7b3f0-9385/" allowfullscreen></iframe>
+                    <iframe class="largeProtoTabED" src="https://xd.adobe.com/embed/1b5f2903-36ee-43a9-a559-5e2e011c080d-4e0c/" allowfullscreen></iframe>
+                    <iframe class="largeProtoMobEd" src="https://xd.adobe.com/embed/fe6b2e6b-e311-4172-b047-09a86892cfd4-ab38/" allowfullscreen></iframe>   
+                    <p class="findings">See full size prototypes: <span class="link"> <span class="margin"><a href="https://xd.adobe.com/view/c6d6af80-7061-4144-9504-6f0fbda7b3f0-9385/" target="blank">desktop</a></span><span class="margin"><a href="https://xd.adobe.com/view/1b5f2903-36ee-43a9-a559-5e2e011c080d-4e0c/" target="blank">tablet</a></span><span class="margin"><a href="https://xd.adobe.com/view/fe6b2e6b-e311-4172-b047-09a86892cfd4-ab38/" target="blank">mobile</a></span></span></p>
+
+                </div>
+                
+      
+</section>
+
+
+
+
+ <!-- Footer -->
+ <hr id="lineGrad3" class="footLine">
+
+ <footer class="footerGrid">
+    <div><br></div>
+    <div><a href="index.html">
+        <img class="childLogo" src="images/logo.png" alt="Logo" width="69px">
+    </a>
+    </div>
+    <div>
+    <h5 class="childName">Michele Foshee</h5>
+</div>
+<div class="navigation"><a href="index.html#UX/UI_Case_Studies">UX/UI CASE STUDIES</a></div>
+<div class="navigation"><a href="./related.html">RELATED WORK</a> </div>
+<div class="navigation"><a href="images/MFoshee_resume_UXUI_092021.pdf" target="blank">RESUME</a></div>
+<div class="navigation"><a href="mailto:mfoshee@gmail.com" target="blank">CONTACT</a></div>
+<div class="social"><a href="https://www.linkedin.com/in/mlfstudio/" target="blank"><img src="images/linkedin.png" alt="LinkedIn" width="25px"></a></div>
+<div class="social"><a href="https://www.instagram.com/mfoshee/" target="blank"><img src="images/insta.png" alt="Instagram" width="25px"></a></div>
+<div class="social"><a href="https://www.facebook.com/mfoshee.art" target="blank"><img src="images/facebook.png" alt="Facebook" width="11px"></a></div>
+</div>
+
+</footer>
+</body>
+<script
+src="https://code.jquery.com/jquery-3.4.1.js"
+integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+crossorigin="anonymous"></script>
+<script src="js/index.js"></script>
+</html>
